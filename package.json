@@ -1,21 +1,23 @@
 {
-  "name": "vanilla-app-template",
+  "name": "javascriptmasters",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/JavaScriptMasters/",
     "preview": "vite preview"
   },
   "devDependencies": {
     "vite": "^4.5.2",
     "glob": "^8.1.0"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "JavaScriptMasters <volodymyrshorobura88@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
-  }
+  },
+  "description": "Этот проект был создан при помощи Vite. Для знакомства и настройки\r дополнительных возможностей [обратись к документации](https://vitejs.dev/).",
+  "main": "vite.config.js"
 }
