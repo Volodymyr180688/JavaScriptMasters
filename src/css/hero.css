@@ -1,0 +1,15 @@
+@import url(./reset.css);
+
+h3{
+    width:84px;
+    height:19px;
+    color: #FAFAFA;
+}
+
+.link-item{
+font: Inter Tight;
+Weight:500;
+Size:16px;
+height: 19.36px;
+color: #FAFAFA;
+}
