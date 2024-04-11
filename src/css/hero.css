@@ -1,0 +1,51 @@
+@import url('./reset.css');
+
+
+.fatherHeroSaction{
+    margin: 0 auto;
+    Width:375px;
+    Height:812px;
+    background: linear-gradient(90deg, rgba(237,58,67,1) 0%, rgba(110,36,36,1) 47%, rgba(27,28,31,1) 100%);
+}
+
+.kingText{
+    width: 343px;
+    height: 250px;
+    font-size: 25px;
+    letter-spacing: -1px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #fafafa;
+    font-weight: 500;
+    font-family: "Inter Tight";
+}
+
+.link-message{
+    display: flex;
+    gap: 10px;
+}
+
+.item-link-mesage{
+    height: 37px;
+    width: 37px;
+    display: flex;
+    border: 1px;
+    align-items: center;
+}
+
+.item-link-mesage-mailto{
+    width: 178px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+}
+
+.messages{
+    font-family: inter;
+}
+
+.emaill{
+    font-family:Inter, tight;
+    width: 154px;
+    height: 17px;
+}
