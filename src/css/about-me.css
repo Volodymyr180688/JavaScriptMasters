@@ -1,6 +1,7 @@
-.container-aboutme {
+.container {
 margin: 0 auto;
 padding: 0 15px;
+
 }
 
 .visually-hidden{
@@ -16,46 +17,50 @@ clip: rect(0 0 0 0);
 overflow: hidden;
 }
 
-.aboutme{
+.about-me{
 background-color: #1C1D20;
 color: rgba(250, 250, 250, 0.6);
 font-weight: 500;
 font-family: Inter;
 }
 
-.aboutme-list{
+.about-me-list{
 display: flex;
 justify-content: flex-start;
 flex-direction: column;
 gap: 32px;
-margin-left: auto;
-margin-right: auto;
+padding: 48px;
+margin: 0 auto;
 
 }
 
-.aboutme-text{
+.about-me-text{
 font: 500 16px / 1.5 'Inter Tight', sans-serif;
 letter-spacing: -0.02em;
-color: #fafafa;;
-}
-
-.info-aboutme {
-background-color: #242527;
-font: 500 24px / 1.17 'Inter Tight', sans-serif;
-letter-spacing: -0.03em;
-line-height: 117%;
-text-transform: uppercase;
 color: #fafafa;
-padding: 32px;
+text-align: left;
 }
 
-.info-aboutme-text {
-display: flex;
-gap: 16px;
-margin-bottom: 96px;
-flex-direction: column;
-width: 552px;
-height: 240px;  
+.info-about-me {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 96px;
+    flex-direction: column;
+
+}
+
+.info-about-me-text {
+    border-radius: 24px;
+    max-width: 680px;
+    height: 700px;
+    background-color: #242527;
+    font: 500 38px / 'Inter Tight', sans-serif;
+    letter-spacing: -0.03em;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #ffff;
+    padding: 64px; 
+    text-align: left;
 }
 
 
@@ -94,8 +99,13 @@ transition-timing-function: ease;
 
 
     .accordion-block{
+    font: 600 16px / 1.5 'Inter Tight', sans-serif;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
     display: flex;
     justify-content: space-between;
+
     }
 
     .ac-icon {
@@ -106,15 +116,37 @@ transition-timing-function: ease;
       height: 20px;
       margin-left: auto;}
 
-/*Працюю над Медіа*/
+.accordion-wrap{
+ margin-top: 8px;
+ background-color: #fff;
+ border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+ box-sizing: border-box;
+ height: 0;
+}
+
+.accordion-pack{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.accordion-wrap .overflow {
+    overflow: hidden;
+    transition-property: height, visibility;
+    transition-timing-function: ease ;
+}
+
 
       @media screen and (max-width: 374.99px) {
-        .container-aboutme {
+        .container {
+            max-width: 375px;
+          }
+        .container-about-me {
         margin: 0 10px;
         padding: 0 auto;
 
             }
-        .info-aboutme-text {
+        .info-about-me-text {
         display: flex;
         gap: 8px;
         margin-bottom: 96px;
@@ -123,7 +155,7 @@ transition-timing-function: ease;
         height: 196px;  
                 }
      
-.info-aboutme {
+.info-about-me {
     background-color: #242527;
     font: 500 24px / -0.03 'Inter Tight', sans-serif;
     line-height: 28px;
@@ -136,25 +168,46 @@ transition-timing-function: ease;
     }
 
     @media screen and (min-width: 375px) {
+
+        .container {
+            max-width: 375px;}
     }
 
     @media screen and (min-width: 768px) {
+        .container {
+            max-width: 768px;}
+
+        .container-about-me {
+        margin: 0 10px;
+        padding: 0 auto;}
+
+        .info-about-me-text{
+          
+        font: 500 38px / 1.05263 'Inter Tight', sans-serif;
+        line-height: 105%;
+        padding: 64px;
+        max-width: 680px;
+        margin-bottom: 396px;
+        }
+    
     }
 
       @media screen and (min-width: 1440px){
-        .container-aboutme{
+        .container {
+            max-width: 1440px;}
+        .container-about-me{
         margin-bottom: 96px;
         flex-direction: row;
         }
 
-        .info-aboutme-text{
-            height: 700px;
+        .info-about-me-text{
+          
             font: 500 38px / 1.05263 'Inter Tight', sans-serif;
             line-height: 105%;
             padding: 64px;
             max-width: 680px;
         }
-        .aboutme-list {
+        .about-me-list {
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
