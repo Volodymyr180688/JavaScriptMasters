@@ -1,15 +1,40 @@
 @import url(./reset.css);
 
-h3{
-    width:84px;
-    height:19px;
+/* body{
+    background-color: #FAFAFA;
+} */
+
+.fatherSection{
+    padding: 32px 16px 0 16px;
+    width: 343px;
+    margin: 0 auto;
+}
+
+.logo-flex{
+    display: flex;
+    gap: 8px;
+}
+
+.logo-jef{
     color: #FAFAFA;
+    width: 84px;
+    height: 19px;
 }
 
 .link-item{
-font: Inter Tight;
-Weight:500;
-Size:16px;
-height: 19.36px;
-color: #FAFAFA;
+    font: Inter Tight;
+    width: 500px;
+    Size:16px;
+    height: 19.36px;
+    color: #FAFAFA;
+}
+
+.nav-link{
+    display: none;
+}
+
+.orderH3{
+    color: #FAFAFA;
+    width: 500px;
+    height: 45px;
 }
