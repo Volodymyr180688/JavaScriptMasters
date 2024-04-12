@@ -5,8 +5,8 @@
  }
 
  .containerHero{
-    display: flex;
-    align-items: center;
+    width: 375px;
+    margin: 0 auto;
  }
 
 .fatherHeroSaction{
