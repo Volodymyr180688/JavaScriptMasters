@@ -1,7 +1,3 @@
-.container {
-  margin: 0 auto;
-}
-
 li.accordion {
   margin-bottom: 0;
 }
@@ -20,6 +16,15 @@ li.accordion {
 
 .faq-title h2 {
   color: white;
+}
+
+.faq-icon {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 100px;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
 }
 
 .accordion-open {
