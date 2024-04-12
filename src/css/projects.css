@@ -17,11 +17,6 @@
   overflow: hidden;
 }
 
-/* .swiper {
-  width: 600px;
-  height: 300px;
-} */
-
 .swiper-wrapper {
   display: flex;
   gap: 10px;
