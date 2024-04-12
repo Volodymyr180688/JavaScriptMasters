@@ -1,16 +1,15 @@
 
-
 .ab {
     display: flex;
     gap: 16px;
     margin-bottom: 96px;
-    margin-top: 72px;
+    margin-top: 96px;
 
    
   }
   .about-me {
   border-radius: 24px;
-  max-width: 100%;
+  width: auto;
   height: 500px;
   font: 500 38px / 1.17 'Inter Tight', sans-serif;
   color: #fafafa;
@@ -27,7 +26,7 @@
   .my-photo {
     border-radius: 24px;
     height: 625px; 
-    width: 680px;
+    width: auto;
   }
  
   #func {
@@ -44,15 +43,9 @@
     gap: 32px;
     max-width: 100%;
     height: 608px; 
-    margin-bottom: 96px;
+    margin-bottom: 800px;
   }
-  .am-about-me {
-    width: 100%;
-    height: 400px; 
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-left: none;
-    border-right: none; 
-  }
+
   .am-accordion-wrap {
     font: 600 16px / 1.5 'Inter Tight', sans-serif;
     letter-spacing: -0.02em;
@@ -61,10 +54,6 @@
   
     display: flex;
     justify-content: space-between;
-  }
-  .am-wrapper {
-    width: 100%;
-    height: 72px;
   }
   .about-me-list {
     display: flex;
@@ -78,21 +67,16 @@
   .about-me-text {
     font: 500 16px / 1.5 'Inter Tight', sans-serif;
     letter-spacing: -0.02em;
-    color: #fafafa;
+    color: rgb(250, 250, 250);
     
   }
-.about-me-text {
-    color: #fafafa;
-  }
-  
   .main-accordion {
     margin-top: 8px;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     box-sizing: border-box;
     width: 100%;
   }
-  
-  .main-accordion.ac-header {
+  .main-accordion .ac-header {
     margin: 0;
     padding: 0;
   }
@@ -108,7 +92,7 @@
     text-decoration: none;
     margin: 0;
     border: 0;
-    height: 72px;
+    height: 68px;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
@@ -121,7 +105,7 @@
   }
   .main-accordion.ac-panel {
     overflow: hidden;
-    transition-property: height, visibility;
+    transition-property: visibility;
     transition-timing-function: ease;
   }
   .main-accordion .ac-panel .ac-text {
@@ -136,7 +120,7 @@
     width: 20px;
     height: 20px;
     margin-left: auto;
-    transform: rotate(0);
+
   }
   
   .ac-icon-active {

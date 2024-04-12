@@ -20,23 +20,3 @@ body {
   overflow: hidden;
 }
 
-@media screen and (max-width: 374.99px) {
-  .container {
-      max-width: 375px;
-    }}
-
-
-    @media screen and (min-width: 375px) {
-    
-      .container {
-          max-width: 760px;}
-  }
-
-  @media screen and (min-width: 768px) {
-    .container {
-        max-width: 1440px;}}
-
-        
-  @media screen and (min-width: 1440px){
-    .container {
-        max-width: 1440px;}}
