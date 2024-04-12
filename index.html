@@ -498,82 +498,114 @@ viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     
 </section>
     <footer>
-    <section class="footer-section section">
-        <div class="footer-container container">
-            <div class="footer-title-wrapper">
-                <picture>
-                    <source srcset="../images/footer/author-desktop-footer.png 1x,
-                                ../images/footer/author-desktop-footer@2x.png" media="(min-width: 1440px)" />
+  <section class="footer-section section">
+    <div class="footer-container container">
+      <div class="footer-title-wrapper">
+        <picture>
+          <source
+            srcset="
+              ../images/footer/author-desktop-footer.png    1x,
+              ../images/footer/author-desktop-footer@2x.png
+            "
+            media="(min-width: 1440px)"
+          />
 
+          <source
+            srcset="
+              ../images/footer/author-tablet-footer.png    1x,
+              ../images/footer/author-tablet-footer@2x.png
+            "
+            media="(min-width: 768px)"
+          />
 
-                    <source srcset="../images/footer/author-tablet-footer.png 1x,
-                                ../images/footer/author-tablet-footer@2x.png" media="(min-width: 768px)" />
+          <source
+            srcset="
+              ../images/footer/author-mobile-footer.png    1x,
+              ../images/footer/author-mobile-footer@2x.png
+            "
+            media="(max-width: 767px)"
+          />
 
-                    <source srcset="../images/footer/author-mobile-footer.png 1x,
-                                ../images/footer/author-mobile-footer@2x.png" media="(max-width: 767px)" />
+          <img
+            class="footer-img"
+            src=" ../images/footer/author-mobile-footer.jpg"
+            alt="Lloyd Jefferson - a talented programmer"
+          />
+        </picture>
 
-                    <img class="footer-img" src=" ../images/footer/author-mobile-footer.jpg"
-                        alt="Lloyd Jefferson - a talented programmer">
-                </picture>
+        <p class="footer-title">Let's <span class="color-accent">work</span></p>
+        <p class="footer-title">together</p>
+      </div>
 
-                <P class="footer-title">Let's <span class="color-accent">work</span></p>
-                <p class="footer-title">together</p>
-            </div>
-
-
-            <form class="footer-form">
-                <div class="footer-form-fields-wrapper">
-                    <input class="footer-form-input" id="user-email" name="userEmail" type="email"
-                        placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
-                </div>
-
-                <div class="footer-form-fields-wrapper">
-                    <!-- <textarea class="footer-form-comments" id="user-comment" name="usercomment" placeholder="comments"
-                        required></textarea> -->
-                    <input class="footer-form-input" id="user-comment" name="userComment" type="text"
-                        placeholder="comments" autocomplete="off" required>
-                </div>
-
-
-                <button class="footer-form-btn" type="submit">Send</button>
-            </form>
-
-            <address class="footer-address">
-                <a class="footer-link" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
-                <a class="footer-link" href="tel:+3801111111111">+380 11 1111 11 11</a>
-            </address>
-
+      <form class="footer-form">
+        <div class="footer-form-fields-wrapper">
+          <input
+            class="footer-form-input"
+            id="user-email"
+            name="userEmail"
+            type="email"
+            placeholder="clients@gmail.com"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            required
+          />
         </div>
 
+        <div class="footer-form-fields-wrapper">
+          <!-- <textarea class="footer-form-comments" id="user-comment" name="usercomment" placeholder="comments"
+                        required></textarea> -->
+          <input
+            class="footer-form-input"
+            id="user-comment"
+            name="userComment"
+            type="text"
+            placeholder="comments"
+            autocomplete="off"
+            required
+          />
+        </div>
 
-    </section>
+        <button class="footer-form-btn" type="submit">Send</button>
+      </form>
 
-
+      <address class="footer-address">
+        <a class="footer-link" href="mailto:lloydjefferson@gmail.com"
+          >lloydjefferson@gmail.com</a
+        >
+        <a class="footer-link" href="tel:+3801111111111">+380 11 1111 11 11</a>
+      </address>
+    </div>
+  </section>
 </footer>
 
 <!-- footer back-drop & modal window -->
 
-<div class="footer-backdrop is-open">
-    <div class="footer-modal">
+<div class="footer-backdrop">
+  <div class="footer-modal">
+    <button class="footer-modal-close-btn">
+      <svg
+        class="footer-modal-close-btn-icon"
+        width="24"
+        height="24"
+        aria-label="close footer modal icon"
+      >
+        <use href="../images/icons.svg#icon-footer-modal-close-btn"></use>
+      </svg>
+    </button>
+    <!-- це шаблон для вставки за допомогою JS -->
 
-        <button class="footer-modal-close-btn">
-            <svg class="footer-modal-close-btn-icon" width="24" height="24" aria-label="close footer modal icon">
-                <use href="../images/icons.svg#icon-footer-modal-close-btn"></use>
-            </svg>
-        </button>
-        <!-- це шаблон для вставки за допомогою JS -->
-
-        <!-- start -->
-        <h3 class="footer-modal-title">Thank you for your interest in cooperation!</h3>
-        <p class="footer-modal-content">
-            The manager will contact you shortly to discuss further details and opportunities for cooperation. Please
-            stay in touch.
-        </p>
-        <!-- end -->
-    </div>
-
+    <!-- start -->
+    <h3 class="footer-modal-title">
+      Thank you for your interest in cooperation!
+    </h3>
+    <p class="footer-modal-content">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+    <!-- end -->
+  </div>
 </div>
-    <div class="mobile-menu menu-open">
+
+    <div class="mobile-menu">
   <div class="container">
     <button class="close-menu-btn" type="button">
       <svg class="close-menu-icon" width="14" height="14">
