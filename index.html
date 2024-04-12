@@ -15,7 +15,7 @@
     
     <script type="module" crossorigin src="/JavaScriptMasters/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/JavaScriptMasters/assets/vendor-34f890c2.js">
-    <link rel="stylesheet" href="/JavaScriptMasters/assets/index-304b9156.css">
+    <link rel="stylesheet" href="/JavaScriptMasters/assets/index-446b8172.css">
   </head>
   <body>
             <!-- =====================OCHERETKO OLEH(START)==================== -->
@@ -490,7 +490,7 @@ viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <section class="footer-section section">
         <div class="footer-container container">
             <div class="footer-title-wrapper">
-                <picture class="footer-img">
+                <picture>
                     <source srcset="../images/footer/author-desktop-footer.png 1x,
                                 ../images/footer/author-desktop-footer@2x.png" media="(min-width: 1440px)" />
 
@@ -501,12 +501,14 @@ viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <source srcset="../images/footer/author-mobile-footer.png 1x,
                                 ../images/footer/author-mobile-footer@2x.png" media="(max-width: 767px)" />
 
-                    <img src=" ../images/footer/author-mobile-footer.jpg" alt="Lloyd Jefferson - a talented programmer"
-                        width="44" height="44">
+                    <img class="footer-img" src=" ../images/footer/author-mobile-footer.jpg"
+                        alt="Lloyd Jefferson - a talented programmer">
                 </picture>
 
-                <h3 class="footer-title">Let's <span class="color-accent">work</span> together</h3>
+                <P class="footer-title">Let's <span class="color-accent">work</span></p>
+                <p class="footer-title">together</p>
             </div>
+
 
             <form class="footer-form">
                 <div class="footer-form-fields-wrapper">
@@ -518,8 +520,9 @@ viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <!-- <textarea class="footer-form-comments" id="user-comment" name="usercomment" placeholder="comments"
                         required></textarea> -->
                     <input class="footer-form-input" id="user-comment" name="userComment" type="text"
-                        placeholder="comments" required>
+                        placeholder="comments" autocomplete="off" required>
                 </div>
+
 
                 <button class="footer-form-btn" type="submit">Send</button>
             </form>
@@ -539,7 +542,7 @@ viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 
 <!-- footer back-drop & modal window -->
 
-<div class="footer-backdrop">
+<div class="footer-backdrop is-open">
     <div class="footer-modal">
 
         <button class="footer-modal-close-btn">
