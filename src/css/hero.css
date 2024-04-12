@@ -34,7 +34,6 @@
     text-transform: uppercase;
     color: rgb(250, 250, 250);
     position: relative;
-    width: 342px;
     top: 281px;
     bottom: 231px;
     height: 300px;
@@ -51,6 +50,7 @@
     justify-content: space-evenly;
     align-items: baseline;
     gap: 4px;
+    margin-left: 10px;
 }
 
 .item-link-mesage{
@@ -94,9 +94,8 @@ align-items: center;
 }
 
 
-.emaill{
+.email{
     font-family: Inter, tight;
-    width: 178px;
     height: 17px;
     font-size: 14px;
     font-weight: 500;
