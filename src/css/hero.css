@@ -1,3 +1,6 @@
+
+/* =========================Mobile Style================================ */
+
 @import url('./reset.css');
 
  body{
@@ -100,3 +103,48 @@ align-items: center;
     font-size: 14px;
     font-weight: 500;
 }
+/* =========================Mobile Style================================ */
+
+
+
+/* =========================Tablet Style================================ */
+@media screen and (min-width: 768px){
+
+.containerHero{
+    width: 798px;
+    padding: 0 15px;
+}
+.fatherHeroSaction{
+
+    position: absolute;
+    width: 343px;
+    height: 80px;
+    left: 16px;
+    right: 16px;
+    top: 32px;
+    bottom: 8015px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 715px;
+    height: 80px;
+    background:linear-gradient(90deg(28, 29, 32, 1)rgba(172, 83, 0, 1),rgba(255, 127, 8, 1),rgba(255, 127, 8, 1)100%);
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+/* =========================Tablet Style================================ */

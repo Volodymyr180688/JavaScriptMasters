@@ -1,3 +1,5 @@
+/* =============================Mobile Styles============================= */
+
 @import url(./reset.css);
 
 
@@ -141,3 +143,38 @@ gap: 143px;
     text-decoration: none;
     cursor: pointer;
 }
+
+/* =============================Mobile Styles============================= */
+
+
+
+
+/* =============================Tablet Styles============================= */
+
+@media screen and (min-width: 768px){
+
+    .containerHeader{
+        width: 798px;
+        padding: 0 15px;
+    }
+
+    .fatherSection{
+        width: 704px;
+        height: 80px;
+    }
+
+    .iconBurger{
+        display: none;
+    }
+
+    @Media(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    .logo{
+        background-image: url('../images/logo_vector@2x.jpeg');
+    }
+}
+
+}
+
+
+/* =============================Tablet Styles============================= */
