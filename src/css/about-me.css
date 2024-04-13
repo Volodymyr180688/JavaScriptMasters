@@ -26,21 +26,7 @@ margin-right: auto;}
     display: flex;
     justify-content: center;
   }
-  .about-me-accordion-button-trigger {
-    width: 36px;
-    height: 36px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 9px;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 100px;
-    background-color: transparent;
-  }
-
-  
-  .about-me-description {
+   .about-me-description {
     position: relative;
     max-width: 343px;
     height: 500px;
@@ -65,6 +51,7 @@ margin-right: auto;}
     letter-spacing: -0.03em;
     text-align: left;
     text-transform: uppercase;
+    color: #ffff;
   }
   
   .func {
@@ -84,17 +71,15 @@ margin-right: auto;}
   }
   .am-main {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+
     flex-direction: column;
-    gap: 32px;
     max-width: 100%;
     height: 608px; 
  
   }
   .am-accordion-wrap {
   color: rgba(250, 250, 250, 0.4);
-  font-family: Inter Tight;
+  font-family: Inter Tight,sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5px;
@@ -104,31 +89,42 @@ margin-right: auto;}
   display: flex;
   justify-content: space-between;
   }
-  .aboutme-list {
+  
+
+  
+  .panel-about-me-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 32px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .panel-about-me-text {
+  font-family:Inter Tight,sans-serif;
+  font-weight: 500px;
+  font-size: 16px;
+  color: #ffff;}
+
+
+  .about-me-accordion-panel-list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    row-gap: 10px;
+    row-gap: 10px;}
+    
 
-  }
   
-  
-  .aboutme-text {
-  color: rgb(250, 250, 250);
-  font-family: Inter Tight;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  
-  }
   .ac {
     margin-top: 8px;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     box-sizing: border-box;
     width: 100%;
   }
+
+
   
   .ac .ac-header {
     margin: 0;
@@ -190,6 +186,8 @@ margin-right: auto;}
     transition: all 1s ease-in;
   }
   
+  
+
   @media screen and (min-width: 768px) {
     .about-me-container {
       margin-left: 32px;
@@ -218,7 +216,7 @@ margin-right: auto;}
     }
   
     .about-me-text {
-      font-family: Inter Tight;
+      font-family: Inter Tight,sans-serif;
       font-size: 38px;
       font-weight: 500;
       line-height: 1.05;
@@ -234,7 +232,7 @@ margin-right: auto;}
       max-width: 704px;
     }
   
-  
+ 
  
 }
     
@@ -253,12 +251,7 @@ margin-right: auto;}
       padding-bottom: 82px;
     }
   
-    .about-me-photo-wrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-
-    }
+  
   
     .about-me-description {
       border-radius: 24px;
@@ -283,7 +276,17 @@ margin-right: auto;}
       max-width: 680px;
     }
   
-
-
+   .panel-about-me-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 32px;}
+   
+  .about-me-accordion-panel {
+    margin-left: 696px;
+    margin-bottom: 24px;
     
-}
+  }
+  
+  }
+    
