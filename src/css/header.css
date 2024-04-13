@@ -10,14 +10,12 @@ align-items: center;
 }
 
 .fatherSection{
-position: absolute;
-width: 343px;
-height: 80px;
-left: 16px;
-right: 16px;
-top: 32px;
-padding: 0px;
-margin: 0 auto;
+    position: absolute;
+    width: 343px;
+    height: 80px;
+    left: 16px;
+    top: 32px;
+    padding: 0px;
 }
 
 .li-Cuild-Ul{
@@ -109,7 +107,7 @@ width: 28px;
 height: 28px;
 }
 
-
+/* ================Modal Window=============== */
 .modal {
 display: none; 
 position: fixed; 
@@ -124,18 +122,19 @@ background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
-background: linear-gradient(270deg, rgb(28, 29, 32) 49.826%,rgb(105, 41, 45) 67.37%,rgb(237, 59, 68) 98.722%);
-margin: auto;
-padding: 20px;
-width: 375px;
-height: 812px;
+    background: linear-gradient(270deg, rgb(28, 29, 32) 49.826%, rgb(105, 41, 45) 67.37%, rgb(237, 59, 68) 98.722%);
+    margin: auto;
+    padding: 20px;
+    height: 100vh;
 }
 
 .close {
-color: #aaaaaa;
-float: right;
-font-size: 28px;
-font-weight: bold;
+    color: #aaaaaa;
+    float: right;
+    right: 0px;
+    width: 40px;
+    top: 32px;
+    position: relative;
 }
 
 .close:hover,
