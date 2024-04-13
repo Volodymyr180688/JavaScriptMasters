@@ -36,7 +36,6 @@
 .benefits-card {
   background-color: rgb(36, 37, 39);
   border-radius: 20px;
-  width: 344px;
   height: 294px;
   margin-bottom: 16px;
 }
@@ -104,7 +103,7 @@
   letter-spacing: -2%;
 }
 
-@media screen and (max-width: 374.98px) {
+@media screen and (max-width: 376px) {
   .container {
     max-width: 375px;
   }
@@ -132,7 +131,7 @@
 /*==========END TABLET STYLES==========*/
 
 /*==========START DESKTOP STYLES==========*/
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
   }
