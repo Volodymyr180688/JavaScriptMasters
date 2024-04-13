@@ -33,35 +33,71 @@
 }
 
 .footer-form-input {
+    box-sizing: border-box;
     display: block;
     width: 100%;
     height: 44px;
     outline: 0px solid transparent;
-    border: none;
+    /* border: none; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #5b5858;
     background-color: transparent;
     font-family: "Inter Tight", sans-serif;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
-    color: rgba(250, 250, 250, 0.6);
+    color: #fafafa;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 0;
 }
 
 .footer-form-input:-webkit-autofill {
     transition: all 5000s ease-in-out 0s;
 }
 
-.footer-form-fields-wrapper::after {
-    content: '';
+/* .footer-form-fields-wrapper::after {
+    content: 'Succes';
+    color: #3CBC81;
     width: 100%;
     height: 1px;
-    background-color: rgba(250, 250, 250, 0.6);
+    background-color: #3CBC81;
     display: block;
     margin-left: auto;
     margin-right: auto;
+} */
+
+.footer-form-fields-wrapper.input-after-green::after {
+    content: 'Succes';
+    color: #3CBC81;
+    width: 100%;
+    height: 1px;
+    background-color: #3CBC81;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    margin-bottom: 15px;
+}
+
+.footer-form-fields-wrapper.input-after-red::after {
+    content: 'Invalid email, try again';
+    color: #E74A3B;
+    width: 100%;
+    height: 1px;
+    background-color: #E74A3B;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    margin-bottom: 15px;
+
 }
 
 .footer-form-input:focus {
@@ -241,6 +277,11 @@
 .footer-modal-close-btn:focus {
     transform: scale(110%);
     stroke: #a0a0a0;
+}
+
+.footer-modal-close-btn:active {
+    transform: scale(100%);
+    stroke: #5b5858;
 }
 
 .footer-modal-title {
