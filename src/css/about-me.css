@@ -1,39 +1,86 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+     white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
-.ab{
+.about-me-section{
+padding-top: 32px;
+padding-bottom: 32px;
+margin-left: auto;
+margin-right: auto;}  
+
+
+.about-me-container {
+    margin-left: 16px;
+    margin-top: 0;
+    margin-right: 16px;
+    margin-bottom: 0;
     display: flex;
-    gap: 16px;
-    margin-bottom: 96px;
-    flex-direction: column;
+    justify-content: center;
   }
-  .about-me {
-    border-radius: 24px;
-    max-width: 100%;
+  .about-me-accordion-button-trigger {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 9px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    background-color: transparent;
+  }
+
+  
+  .about-me-description {
+    position: relative;
+    max-width: 343px;
     height: 500px;
-    background-color: transparent;
-  
-    font: 500 24px / 1.17 'Inter Tight', sans-serif;
-    letter-spacing: -0.03em;
-    line-height: 117%;
-    text-transform: uppercase;
-    color: black;
-    padding: 32px;
-  }
-  body.dark .am-summary {
-    color: #fafafa;
-    background-color: transparent;
-  }
-  
-  .am-photo {
     border-radius: 24px;
-    width: 100%;
-    height: 500px; 
+    background: rgb(36, 37, 39);
+  }
+
+  .about-me-wrapper {
+    position: absolute;
+    max-width: 279px;
+    left: 32px;
+    right: 32px;
+    top: 32px;
+    bottom: 272px;
+  }
+
+  .about-me-text {
+    font-family: Inter Tight;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-align: left;
+    text-transform: uppercase;
   }
   
-  #functional {
-    color: #ed3b44;
+  .func {
+    color: rgb(237, 59, 68);
   }
-  #websites {
-    color: grey;
+  
+  .websites {
+    color: rgba(250, 250, 250, 0.4);
+  }
+  
+
+  .picture{
+    margin-top: 16px;
+    border-radius: 24px;
+    overflow: hidden;
+    max-width: 343px;
   }
   .am-main {
     display: flex;
@@ -41,59 +88,43 @@
     justify-content: flex-start;
     flex-direction: column;
     gap: 32px;
-  
     max-width: 100%;
-    /* height: 608px; */
-  
-    margin-bottom: 96px;
-  }
-  .am-aboutme {
-    width: 100%;
-    /* height: 400px; */
-    /* border: 1px solid rgba(250, 250, 250, 0.2);
-    border-left: none;
-    border-right: none; */
+    height: 608px; 
+ 
   }
   .am-accordion-wrap {
-    font: 600 16px / 1.5 'Inter Tight', sans-serif;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
-    color: rgba(250, 250, 250, 0.4);
-  
-    display: flex;
-    justify-content: space-between;
-  }
-  .am-wrapper {
-    width: 100%;
-    height: 72px;
-    /* border: 1px solid rgba(250, 250, 250, 0.2); */
+  color: rgba(250, 250, 250, 0.4);
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
   }
   .aboutme-list {
     display: flex;
-    /* align-items: flex-end; */
-    justify-content: flex-start;
     flex-direction: column;
-    gap: 32px;
-    /* width: 50%; */
-    margin-left: auto;
-    margin-right: auto;
-    /* margin: 48px; */
-    /* max-width: 612px; */
-  }
-  .aboutme-text {
-    font: 500 16px / 1.5 'Inter Tight', sans-serif;
-    letter-spacing: -0.02em;
-    /* color: #fafafa; */
-    color: black;
-  }
-  body.dark .aboutme-text {
-    color: #fafafa;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 10px;
+
   }
   
+  
+  .aboutme-text {
+  color: rgb(250, 250, 250);
+  font-family: Inter Tight;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  
+  }
   .ac {
     margin-top: 8px;
-    /* border: 1px solid #eee;
-    background-color: #fff; */
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     box-sizing: border-box;
     width: 100%;
@@ -114,14 +145,13 @@
     position: relative;
     text-decoration: none;
     border: 0;
-    /* color: rgba(250, 250, 250, 0.4); */
-    color: black;
+    color: rgba(250, 250, 250, 0.4); 
     height: 72px;
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
   }
-  body.dark .ac .ac-trigger {
+ .ac .ac-trigger {
     color: rgba(250, 250, 250, 0.4);
   }
   .ac .ac-trigger:focus {
@@ -142,8 +172,6 @@
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 100px;
     padding: 10px;
-    width: 40px;
-    height: 40px;
     margin-left: auto;
     transform: rotate(0);
     transition: all 0.1s ease-in;
@@ -162,44 +190,100 @@
     transition: all 1s ease-in;
   }
   
-  /*Медиа запросы*/
-  @media screen and (max-width: 374.98px) {
-  }
-  
-  @media screen and (min-width: 375px) {
-  }
-  
   @media screen and (min-width: 768px) {
-    .am-photo {
-      height: auto;
+    .about-me-container {
+      margin-left: 32px;
+      margin-right: 32px;
+      width: 704px;
     }
-  }
   
+    .about-me-section {
+      padding-top: 41px;
+      padding-bottom: 48px;
+    }
+  
+    .about-me-description {
+      max-width: 704px;
+      height: 673px;
+      background: rgb(36, 37, 39);
+    }
+  
+    .about-me-wrapper {
+      max-width: 576px;
+      height: auto;
+      left: 64px;
+      right: 64px;
+      top: 64px;
+      bottom: 436px;
+    }
+  
+    .about-me-text {
+      font-family: Inter Tight;
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      text-align: left;
+      text-transform: uppercase;
+    }
+  
+    .picture {
+      margin-top: 16px;
+      border-radius: 24px;
+      overflow: hidden;
+      max-width: 704px;
+    }
+  
+  
+ 
+}
+    
   @media screen and (min-width: 1440px) {
-    .am-headline {
-      margin-bottom: 96px;
-      flex-direction: row;
-    }
-    .am-summary {
-      height: 700px;
-      font: 500 38px / 1.05263 'Inter Tight', sans-serif;
-      line-height: 105%;
-      padding: 64px;
-      max-width: 680px;
-    }
-    .am-photo {
-      max-width: 680px;
-      height: 700px;
-    }
-    .aboutme-list {
+    .about-me-container {
+      width: 1376px;
       display: flex;
-      /* align-items: flex-end; */
-      justify-content: flex-start;
-      flex-direction: column;
-      gap: 32px;
-      width: 50%;
-      margin-left: auto;
-      margin-right: 0;
-      padding: 48px;
     }
-  }
+    .about-me-description-and-photo-wrapper{
+        display: flex;
+        gap:16px;
+
+    }
+    .about-me-section {
+      padding-top: 48px;
+      padding-bottom: 82px;
+    }
+  
+    .about-me-photo-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+    }
+  
+    .about-me-description {
+      border-radius: 24px;
+      background: rgb(36, 37, 39);
+      width: 680px;
+      height: 700px;
+    }
+  
+    .about-me-description-wrapper {
+     max-width: 552px;
+      height: 200px;
+      left: 64px;
+      right: 64px;
+      top: 64px;
+      bottom: 436px;
+    }
+  
+    .picture {
+      margin-top: 0;
+      border-radius: 24px;
+      overflow: hidden;
+      max-width: 680px;
+    }
+  
+
+
+    
+}
