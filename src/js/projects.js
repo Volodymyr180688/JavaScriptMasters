@@ -1,13 +1,9 @@
-// import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   new Swiper('.swiper', {
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     loop: true,
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//   });
-// });
+const swiper = new Swiper('.swiper', {
+  navigation: {
+    nextEl: '.custom-button-next',
+    prevEl: '.custom-button-prev',
+  },
+});
