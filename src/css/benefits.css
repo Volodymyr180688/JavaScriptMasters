@@ -1,13 +1,12 @@
 /*==========START MOBILE STYLES==========*/
 .benefits-section-title {
-  color: rgba(250, 250, 250, 0.4);
-  font-family: Inter;
-  font-size: 16px;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
-  line-height: 24px;
-  letter-spacing: -2%;
-  text-align: left;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
 
   position: static;
   width: 284px;
@@ -62,32 +61,32 @@
 }
 
 .benefits-card-title {
-  color: rgb(250, 250, 250);
-  font-family: Inter;
-  font-size: 20px;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
-  line-height: 30px;
-  letter-spacing: -2%;
-  text-align: left;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
 
   margin-bottom: 8px;
 }
 
 .benefits-card-text {
-  color: rgba(250, 250, 250, 0.6);
-  font-family: Inter;
-  font-size: 16px;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
-  line-height: 24px;
-  /* letter-spacing: -2%; */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+
   text-align: left;
   width: 296px;
   height: 72px;
 }
 
 .benefits-link {
-  width: 198px;
-  height: 56px;
+  width: 187px;
+  height: 55px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -99,22 +98,17 @@
 
   background-color: transparent;
 
-  color: rgb(250, 250, 250);
-  font-family: Inter;
-  font-size: 16px;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
-  line-height: 19px;
-  letter-spacing: -2%;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
 
   margin-top: 16px;
 }
 
 .benefits-content {
   margin-bottom: 39px;
-}
-
-.benefits-last-child {
-  height: 246px;
 }
 
 @media screen and (max-width: 374.98px) {
