@@ -22,7 +22,13 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 32px 0px;
+  margin-bottom: 32px;
+  margin-right: auto;
+}
+
+.benefits-main-container {
+  width: 344px;
+  height: 1128px;
 }
 
 .benefits-list {
@@ -36,9 +42,23 @@
 .benefits-card {
   background-color: rgb(36, 37, 39);
   border-radius: 20px;
-  width: 344px;
-  height: 294px;
+  width: 296px;
+  height: 222px;
   margin-bottom: 16px;
+  padding: 24px;
+}
+
+.benefits-card-icon-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: rgb(237, 59, 68);
+
+  margin-bottom: 64px;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .benefits-card-title {
@@ -50,7 +70,6 @@
   letter-spacing: -2%;
   text-align: left;
 
-  padding-left: 24px;
   margin-bottom: 8px;
 }
 
@@ -60,26 +79,10 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: -2%;
+  /* letter-spacing: -2%; */
   text-align: left;
   width: 296px;
   height: 72px;
-
-  padding-left: 24px;
-}
-
-.benefits-card-icon-container {
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
-  background-color: rgb(237, 59, 68);
-
-  margin-top: 24px;
-  margin-left: 24px;
-  margin-bottom: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .benefits-link {
@@ -102,6 +105,16 @@
   font-weight: 500;
   line-height: 19px;
   letter-spacing: -2%;
+
+  margin-top: 16px;
+}
+
+.benefits-content {
+  margin-bottom: 39px;
+}
+
+.benefits-last-child {
+  height: 246px;
 }
 
 @media screen and (max-width: 374.98px) {
@@ -118,39 +131,32 @@
     max-width: 768px;
   }
 
+  .benefits-main-container {
+    width: 704px;
+  }
+
   .benefits-list {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 16px;
-  }
-
-  .benefits-card {
-    width: calc((100% - 16px) / 2);
   }
 }
 
 /*==========END TABLET STYLES==========*/
 
 /*==========START DESKTOP STYLES==========*/
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
   }
 
-  .benefits-container {
-    margin-left: 696px;
-    margin-top: 0;
-  }
-  .benefits-card {
-    background-color: rgb(36, 37, 39);
-    border-radius: 20px;
-    width: 322px;
-    height: 294px;
-    margin-bottom: 16px;
+  .benefits-main-container {
+    width: 704px;
   }
 
-  .benefits-for-desktop {
+  .benefits-container {
     display: flex;
+    justify-content: space-between;
   }
 }
 
