@@ -4,14 +4,13 @@ import 'accordion-js/dist/accordion.min.css';
 const titles = document.querySelectorAll('.faq-title');
 const contents = document.querySelectorAll('.accordion-open');
 
-titles.forEach(item => {
+titles.forEach(item =>
   item.addEventListener('click', () => {
-    const activeContent = document.querySelector(
-      '#' + item.getAttribute('data-tab')
-    );
+    const activeContent = item.children[1];
 
     if (activeContent.classList.contains('active')) {
       activeContent.classList.remove('active');
+
       activeContent.style.maxHeight = 0;
     } else {
       contents.forEach(element => {
@@ -24,5 +23,5 @@ titles.forEach(item => {
       activeContent.classList.add('active');
       activeContent.style.maxHeight = activeContent.scrollHeight + 'px';
     }
-  });
-});
+  })
+);
