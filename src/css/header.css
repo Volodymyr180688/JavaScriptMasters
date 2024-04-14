@@ -1,5 +1,5 @@
 
-              /* =============================Mobile Styles============================= */
+/* =============================Mobile Styles============================= */
 
 @import url(./reset.css);
 
@@ -66,7 +66,7 @@ line-height: 19px;
 letter-spacing: 0.02em;
 text-align: left;
 text-decoration-line: underline;
-} */
+}
 
 .logo-flex{
     display: flex;
@@ -122,6 +122,12 @@ height: 45px;
 display: flex;
 justify-content: center;
 align-items: center;
+}
+
+
+.positionBurger{
+display: flex;
+/* gap: 143px; */
 }
 
 
