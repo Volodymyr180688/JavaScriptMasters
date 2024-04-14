@@ -137,7 +137,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .swiper-slide {
     flex-direction: row;
     width: 1376px !important;
