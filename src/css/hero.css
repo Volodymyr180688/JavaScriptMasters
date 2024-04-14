@@ -1,15 +1,13 @@
+
 /* =========================Mobile Style================================ */
 
 @import url('./reset.css');
 
- body{
-    margin: 0;
- }
 
- .containerHero{
+.containerHero{
     width: 375px;
     margin: 0 auto;
- }
+}
 
 .fatherHeroSaction{
     width: 375px;
@@ -122,7 +120,6 @@ align-items: center;
     right: 16px;
     top: 32px;
     bottom: 8015px;
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -133,17 +130,7 @@ align-items: center;
     height: 80px;
     background:linear-gradient(90deg(28, 29, 32, 1)rgba(172, 83, 0, 1),rgba(255, 127, 8, 1),rgba(255, 127, 8, 1)100%);
 }
-
-
-
-
-
-
 }
 
-
-
-
-
-
 /* =========================Tablet Style================================ */
+

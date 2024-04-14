@@ -1,12 +1,13 @@
 
-              /* =============================Mobile Styles============================= */
-
 @import url(./reset.css);
 
-
-.containerHeader{
-display: flex;
-align-items: center;
+/* =============================Mobile Styles============================= */
+.centering{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .fatherSection{
@@ -20,9 +21,13 @@ padding: 0px;
 margin: 0 auto;
 }
 
+.menu{
+    display: none;
+}
+
 .li-Cuild-Ul{
 gap: 12px;
-position: absolute;
+
 height: 152px;
 left: 150px;
 right: 151px;
@@ -39,7 +44,7 @@ font-family: Inter;
 font-size: 16px;
 font-weight: 500;
 line-height: 19px;
-letter-spacing: -2%;
+letter-spacing: 0.02em;
 text-align: left;
 text-decoration-line: underline;
 }
@@ -63,7 +68,7 @@ border-radius: 18px;
 
 .link-item{
 width: 164px;
-Size: 16px;
+font-size: 16px;
 height: 19.36px;
 color: #FAFAFA;
 display: flex;
@@ -75,7 +80,6 @@ align-items: center;
 border-radius: 60px;
 background: rgb(237, 59, 68);
 margin: 0 auto;
-position: absolute;
 width: 164px;
 height: 45px;
 left: 115px;
@@ -101,14 +105,14 @@ align-items: center;
 
 .positionBurger{
 display: flex;
-gap: 143px;
+
 }
 
 .iconBurger{
 width: 28px;
 height: 28px;
 }
-
+/*=============================Mobile Styles=============================*/
 
 .modal {
 display: none; 
@@ -132,50 +136,34 @@ height: 812px;
 }
 
 .close {
-color: #aaaaaa;
-float: right;
-font-size: 28px;
-font-weight: bold;
+    color: #aaaaaa;
+    float: right;
+    width: 28px;
+    right: 28px;
+    top: 32px;
 }
-
-.close:hover,
-.close:focus {
-color: #000;
-text-decoration: none;
-cursor: pointer;
-}
-
-/* =============================Mobile Styles============================= */
-
-
-
 
 /* =============================Tablet Styles============================= */
-
 @media screen and (min-width: 768px){
 
-.containerHeader{
-width: 798px;
-padding: 0 15px;
-}
+    .fatherSection{
+    width: 704px;
+    height: 80px;
+    }
+    
+    .iconBurger{
+    display: none;
+    }
+    
+    @Media(-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
 
-.fatherSection{
-width: 704px;
-height: 80px;
-}
+    .logo{
+    background-image: url('../images/logo_vector@2x.jpeg');
+    }
+    }
+    }
 
-.iconBurger{
-display: none;
-}
-
-@Media(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-.logo{
-background-image: url('../images/logo_vector@2x.jpeg');
-}
-}
-
-}
+/*=============================Tablet Styles=============================*/
 
 
-/* =============================Tablet Styles============================= */
