@@ -1,9 +1,15 @@
-import { sendCooperationRequest } from './post-api'; // Перевірте та замініть шлях на ваш
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
+import { sendCooperationRequest } from './post-api';
 
 const userCommentForm = document.querySelector('.footer-form');
 const backDrop = document.querySelector('.footer-backdrop');
 const backDropMsg = document.querySelector('.footer-modal-response');
 const modalCloseBtn = document.querySelector('.footer-modal-close-btn');
+const greenRedInputBottomLine = document.querySelector(
+  '.green-or-red-bottom-line'
+);
 
 const inputEmailCheck = document.querySelector('#userEmail');
 const emailResult = document.querySelector('.footer-form-fields-wrapper');
@@ -31,9 +37,21 @@ async function handlerSubmit(event) {
     const markup = responseTemplate(response);
     backDrop.classList.add('is-open');
     backDropMsg.innerHTML = markup;
+
+    if (
+      emailResult.classList.contains('input-after-green') &&
+      greenRedInputBottomLine.classList.contains('border-bottom-color-green')
+    ) {
+      emailResult.classList.remove('input-after-green');
+      greenRedInputBottomLine.classList.remove('border-bottom-color-green');
+    }
     event.target.reset();
   } catch (err) {
-    console.error('Error sending cooperation request:', err);
+    iziToast.error({
+      position: 'topCenter',
+      title: 'Error',
+      message: '❌ Something went wrong. Try again later.',
+    });
   }
 }
 
@@ -53,22 +71,31 @@ function handleKyeDown(event) {
   }
 }
 
-// не дуже впевнений, що це виглядає гуд, але воно працює так я мені потрібно :)
+// виглядає не дуже, але воно працює так як мені потрібно :)
 function onBlurHandle(event) {
   const userInput = event.currentTarget.value.trim();
-  if (event.target.classList.contains('input-after-green')) {
+  if (
+    event.target.classList.contains('input-after-green') &&
+    event.target.classList.contains('border-bottom-color-green')
+  ) {
     emailResult.classList.remove('input-after-green');
+    greenRedInputBottomLine.classList.remove('border-bottom-color-green');
     if (userInput.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
       emailResult.classList.add('input-after-green');
+      greenRedInputBottomLine.classList.add('border-bottom-color-green');
     } else {
       emailResult.classList.add('input-after-red');
+      greenRedInputBottomLine.classList.add('border-bottom-color-red');
     }
   } else {
     emailResult.classList.remove('input-after-red');
+    greenRedInputBottomLine.classList.remove('border-bottom-color-red');
     if (userInput.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
       emailResult.classList.add('input-after-green');
+      greenRedInputBottomLine.classList.add('border-bottom-color-green');
     } else {
       emailResult.classList.add('input-after-red');
+      greenRedInputBottomLine.classList.add('border-bottom-color-red');
     }
   }
 }
