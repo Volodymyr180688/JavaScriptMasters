@@ -1,13 +1,34 @@
-// import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
-// document.addEventListener('DOMContentLoaded', function () {
-//   new Swiper('.swiper', {
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     loop: true,
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
-//   });
-// });
+const swiper = new Swiper('.swiper', {
+  navigation: {
+    nextEl: '.custom-button-next',
+    prevEl: '.custom-button-prev',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  spaceBetween: 30,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  autoHeight: true,
+on: {
+    slideChangeTransitionEnd: function () {
+      const nextButton = document.querySelector('.next-btn');
+      const prevButton = document.querySelector('.prev-btn');
+      if (swiper.isEnd) {
+        nextButton.disabled = true;
+      } else {
+        nextButton.disabled = false;
+      }
+      if (swiper.isBeginning) {
+        prevButton.disabled = true;
+      } else {
+        prevButton.disabled = false;
+      }
+    },
+  },
+});
