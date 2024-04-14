@@ -21,7 +21,7 @@ padding: 0px;
 margin: 0 auto;
 }
 
-.meny{
+.menu{
     display: none;
 }
 
@@ -80,7 +80,6 @@ align-items: center;
 border-radius: 60px;
 background: rgb(237, 59, 68);
 margin: 0 auto;
-
 width: 164px;
 height: 45px;
 left: 115px;
