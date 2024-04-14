@@ -9,8 +9,12 @@ display: flex;
 align-items: center;
 }
 
+.centering{
+    display: flex;
+}
+
 .fatherSection{
-/* position: absolute; */
+position: absolute;
 width: 343px;
 height: 80px;
 left: 16px;
@@ -42,7 +46,7 @@ line-height: 19px;
 letter-spacing: -2%;
 text-align: left;
 text-decoration-line: underline;
-}
+} */
 
 .logo-flex{
 display: flex;
@@ -139,11 +143,11 @@ height: 812px;
     top: 32px;
 }
 
-/* .positionHeader{
+ .positionHeader{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-} */
+} 
 .close:hover,
 .close:focus {
 color: #000;
