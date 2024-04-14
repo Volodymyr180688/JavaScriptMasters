@@ -1,3 +1,4 @@
+
 .swiper-wrapper {
   display: flex;
 }
@@ -159,8 +160,11 @@
   }
 }
 
+
+
+
 @media screen and (min-width: 1440px) {
-  .swiper-slide {
+ .swiper-slide {
     flex-direction: row;
     width: 1376px !important;
     height: 625px;

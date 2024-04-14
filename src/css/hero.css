@@ -1,13 +1,13 @@
+
+/* =========================Mobile Style================================ */
+
 @import url('./reset.css');
 
- body{
-    margin: 0;
- }
 
- .containerHero{
+.containerHero{
     width: 375px;
     margin: 0 auto;
- }
+}
 
 .fatherHeroSaction{
     width: 375px;
@@ -34,7 +34,6 @@
     text-transform: uppercase;
     color: rgb(250, 250, 250);
     position: relative;
-    width: 342px;
     top: 281px;
     bottom: 231px;
     height: 300px;
@@ -51,6 +50,7 @@
     justify-content: space-evenly;
     align-items: baseline;
     gap: 4px;
+    margin-left: 10px;
 }
 
 .item-link-mesage{
@@ -94,10 +94,43 @@ align-items: center;
 }
 
 
-.emaill{
+.email{
     font-family: Inter, tight;
-    width: 178px;
     height: 17px;
     font-size: 14px;
     font-weight: 500;
 }
+/* =========================Mobile Style================================ */
+
+
+
+/* =========================Tablet Style================================ */
+@media screen and (min-width: 768px){
+
+.containerHero{
+    width: 798px;
+    padding: 0 15px;
+}
+.fatherHeroSaction{
+
+    position: absolute;
+    width: 343px;
+    height: 80px;
+    left: 16px;
+    right: 16px;
+    top: 32px;
+    bottom: 8015px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+
+    width: 715px;
+    height: 80px;
+    background:linear-gradient(90deg(28, 29, 32, 1)rgba(172, 83, 0, 1),rgba(255, 127, 8, 1),rgba(255, 127, 8, 1)100%);
+}
+}
+
+/* =========================Tablet Style================================ */
+
