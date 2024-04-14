@@ -6,7 +6,7 @@ const contents = document.querySelectorAll('.accordion-open');
 
 titles.forEach(item =>
   item.addEventListener('click', () => {
-    const activeContent = document.querySelector('#' + item.dataset.tab);
+    const activeContent = item.children[1];
 
     if (activeContent.classList.contains('active')) {
       activeContent.classList.remove('active');
