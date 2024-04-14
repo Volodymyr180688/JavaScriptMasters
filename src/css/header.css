@@ -15,8 +15,13 @@
 }
 
 
+.centering{
+    display: flex;
+}
+
+
 .fatherSection{
-/* position: absolute; */
+position: absolute;
 width: 343px;
 height: 80px;
 left: 16px;
@@ -57,7 +62,7 @@ line-height: 19px;
 letter-spacing: -2%;
 text-align: left;
 text-decoration-line: underline;
-}
+} */
 
 .logo-flex{
     display: flex;
@@ -151,10 +156,13 @@ background-color: rgba(0,0,0,0.4);
     top: 32px;
 }
 
-/* .positionHeader{
+ .positionHeader{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
+
+} 
+
 } */
 
     right: 0px;
@@ -162,6 +170,7 @@ background-color: rgba(0,0,0,0.4);
     top: 32px;
     position: relative;
 }
+
 
 
 .close:hover,
