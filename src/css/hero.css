@@ -35,7 +35,7 @@
     text-align: left;
     text-transform: uppercase;
     color: rgb(250, 250, 250);
-    position: relative;
+    /* position: relative; */
     top: 281px;
     bottom: 231px;
     height: 300px;
@@ -43,7 +43,7 @@
 }
 
 .link-message{
-    position: absolute;
+    /* position: absolute; */
     width: 342px;
     height: 37px;
     top: 743px;
@@ -56,7 +56,7 @@
 }
 
 .item-link-mesage{
-position: static;
+/* position: static; */
 width: 37px;
 height: 37px;
 display: flex;

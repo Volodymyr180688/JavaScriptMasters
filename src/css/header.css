@@ -10,7 +10,7 @@ align-items: center;
 }
 
 .fatherSection{
-position: absolute;
+/* position: absolute; */
 width: 343px;
 height: 80px;
 left: 16px;
@@ -22,7 +22,7 @@ margin: 0 auto;
 
 .li-Cuild-Ul{
 gap: 12px;
-position: absolute;
+/* position: absolute; */
 height: 152px;
 left: 150px;
 right: 151px;
@@ -75,7 +75,7 @@ align-items: center;
 border-radius: 60px;
 background: rgb(237, 59, 68);
 margin: 0 auto;
-position: absolute;
+/* position: absolute; */
 width: 164px;
 height: 45px;
 left: 115px;
@@ -132,12 +132,18 @@ height: 812px;
 }
 
 .close {
-color: #aaaaaa;
-float: right;
-font-size: 28px;
-font-weight: bold;
+    color: #aaaaaa;
+    float: right;
+    width: 28px;
+    right: 28px;
+    top: 32px;
 }
 
+/* .positionHeader{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+} */
 .close:hover,
 .close:focus {
 color: #000;
