@@ -146,26 +146,14 @@ height: 812px;
     top: 32px;
 }
 
-.positionHeader{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-} 
-.close:hover,
-.close:focus {
-color: #000;
-text-decoration: none;
-cursor: pointer;
-}
+
   /*=============================Mobile Styles=============================*/
+  
   /* =============================Tablet Styles============================= */
 
   @media screen and (min-width: 768px){
 
-    .containerHeader{
-    width: 768px;
-    padding: 0 15px;
-    }
+
     
     .fatherSection{
     width: 704px;
