@@ -1,4 +1,4 @@
-/* .carousel-about-me-list{
+ .carousel-about-me-list{
     width: 200px;
   }
   
@@ -14,8 +14,24 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .swiper-button-next{
-    padding: 20px;
-    background-color: #8a8a8a;
-  } */
+.swiper-button-next-about-me{
+       padding: 20px;
+        background-color: #8a8a8a;
+    
+} 
+.carousel-about-me-list{
+    width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .carousel-about-me-item {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+
+}
