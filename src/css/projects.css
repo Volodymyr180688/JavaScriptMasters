@@ -1,12 +1,11 @@
 .projects {
   width: 343px;
   height: 952px;
-  margin: 39px 16px 64px 16px;
+  margin: 39px auto 64px auto;
 }
 
 .swiper-wrapper {
   display: flex;
-  gap: 10px;
 }
 .swiper-slide {
   display: flex !important;
@@ -112,7 +111,7 @@
   .projects {
     width: 704px;
     height: 1379px;
-    margin: 71px 32px 96px 32px;
+    margin: 71px auto 96px auto;
   }
 
   .swiper-slide {
@@ -166,7 +165,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .projects {
     width: 1376px;
     height: 813px;

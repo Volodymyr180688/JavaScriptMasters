@@ -1,9 +1,9 @@
 .footer-container {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     display: flex;
     flex-direction: column;
-    min-width: 320px;
-    margin: 0 auto;
+    /* min-width: 320px; */
+    /* margin: 0 auto; */
     padding: 32px 16px;
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
@@ -21,7 +21,6 @@
 }
 
 .footer-title {
-    flex-wrap: wrap;
     font-size: 40px;
     line-height: 1;
     letter-spacing: -0.03em;
@@ -29,20 +28,19 @@
 }
 
 .footer-form {
-    margin-top: 30px;
+    margin-top: 44px;
 }
 
 .footer-form-input {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    height: 44px;
+    margin-bottom: 20px;
     outline: 0px solid transparent;
-    /* border: none; */
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 1px solid #5b5858;
+    border-bottom: none;
     background-color: transparent;
     font-family: "Inter Tight", sans-serif;
     font-size: 16px;
@@ -52,52 +50,51 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-top: 20px;
 }
 
-.footer-form-input:-webkit-autofill {
+.footer-form-input:-webkit-autofill,
+.footer-form-input-email:-webkit-autofill {
     transition: all 5000s ease-in-out 0s;
 }
-
-/* .footer-form-fields-wrapper::after {
-    content: 'Succes';
-    color: #3CBC81;
-    width: 100%;
-    height: 1px;
-    background-color: #3CBC81;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-} */
 
 .footer-form-fields-wrapper.input-after-green::after {
     content: 'Succes';
     color: #3CBC81;
     width: 100%;
-    height: 1px;
-    background-color: #3CBC81;
     display: block;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
     line-height: 1.28571;
     letter-spacing: -0.02em;
-    margin-bottom: 15px;
+    margin-top: 4px;
 }
 
 .footer-form-fields-wrapper.input-after-red::after {
     content: 'Invalid email, try again';
     color: #E74A3B;
     width: 100%;
-    height: 1px;
-    background-color: #E74A3B;
+    /* background-color: #E74A3B; */
     display: block;
     margin-left: auto;
     margin-right: auto;
     font-size: 14px;
     line-height: 1.28571;
     letter-spacing: -0.02em;
-    margin-bottom: 15px;
+}
 
+.green-or-red-bottom-line,
+.input-bottom-line {
+    border-bottom: 1px solid #5b5858;
+}
+
+.border-bottom-color-green {
+    border-bottom: 1px solid #3CBC81;
+}
+
+.border-bottom-color-red {
+    border-bottom: 1px solid #E74A3B;
 }
 
 .footer-form-input:focus {
@@ -124,25 +121,33 @@
     background-color: #ED3B44;
     margin-top: 32px;
     margin-bottom: 64px;
-    transition: background-color 250ms linear;
+    transition: background-color 250ms linear,
+        transform 250ms linear;
     outline: 0px solid transparent;
 }
 
 .footer-form-btn:focus,
 .footer-form-btn:hover {
-    background-color: #e81b25;
+    background-color: #e7202a;
+    transform: scale(102%);
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
 }
 
 .footer-link {
-    font-size: 14px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 10px 12px;
-    height: 37px;
     transition: border 250ms linear;
     outline: 0px solid transparent;
+    font-size: 14px;
     font-style: normal;
-    margin-right: 4px;
+    line-height: 0.85;
 }
 
 .footer-link:focus,
@@ -152,7 +157,7 @@
 
 @media screen and (min-width: 768px) {
     .footer-container {
-        min-width: 768px;
+        /* min-width: 768px; */
         padding: 64px 32px;
     }
 
@@ -163,6 +168,7 @@
 
     .footer-title {
         font-size: 64px;
+        font-weight: 500;
     }
 
     .footer-form {
@@ -186,11 +192,14 @@
         margin-bottom: 0;
     }
 
-
     .footer-link {
         font-size: 16px;
         padding: 18px 32px;
-        margin-right: 8px;
+        line-height: 1.08;
+    }
+
+    .footer-address {
+        gap: 8px;
     }
 }
 
@@ -223,7 +232,6 @@
         width: 390px;
     }
 }
-
 
 /* =========== footer back-drop & modal menu */
 
