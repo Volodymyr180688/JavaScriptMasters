@@ -29,5 +29,4 @@ titles.forEach(item => {
   });
 });
 
-const swiperAboutMe = document.querySelector(".about-me-swiper");
-const SWA = initSwiper(swiperAboutMe, 'horizontal', true);
+
