@@ -21,6 +21,10 @@ padding: 0px;
 margin: 0 auto;
 }
 
+.menu{
+    display: none;
+}
+
 .li-Cuild-Ul{
 gap: 12px;
 
@@ -76,7 +80,6 @@ align-items: center;
 border-radius: 60px;
 background: rgb(237, 59, 68);
 margin: 0 auto;
-
 width: 164px;
 height: 45px;
 left: 115px;
