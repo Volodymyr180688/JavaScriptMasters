@@ -1,5 +1,4 @@
 
-
 /* =========================Mobile Style================================ */
 
 @import url('./reset.css');
@@ -7,17 +6,16 @@
  body{
     margin: 0;
  }
-
- .containerHero{
-    width: 375px;
+ .center{
+    display: flex;
+    align-items: center;
  }
-
 .fatherHeroSaction{
-    width: 375px;
+    max-width: 375px;
     height: 812px;
     background: linear-gradient(90deg, rgba(148, 19, 27, 1) 11%, rgba(114, 14, 14, 1) 42%, rgba(0, 0, 0, 1) 100%);
     margin: 0 auto;
-    padding: 0 15px;
+    width: 100%;
 }
 
 
@@ -28,9 +26,7 @@
     align-items: center;
 }
 .kingText{
-
     position: relative;
-    left: 16px;
     top: 281px;
     color: rgb(250, 250, 250);
     font-family: Inter;
@@ -40,6 +36,8 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     max-width: 342px;
+    left: 16px;
+    right: 17px;
 }
 
 .link-message{
@@ -109,24 +107,9 @@
     padding: 0 15px;
 }
 .fatherHeroSaction{
-
-    /* position: absolute; */
+    position: absolute;
     width: 100%;
-    /* height: 80px; */
-    /* left: 16px; */
-    /* right: 16px; */
-    /* top: 32px; */
-    /* bottom: 8015px; */
-    /* Auto layout */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start; */
-    /* padding: 0px; */
-
-    width: 715px;
-    height: 80px;
-    background:linear-gradient(90deg(28, 29, 32, 1)rgba(172, 83, 0, 1),rgba(255, 127, 8, 1),rgba(255, 127, 8, 1)100%);
+    background: linear-gradient(269deg, rgb(28, 29, 32) 49.692%, rgb(172, 83, 0) 67.704%, rgb(255, 127, 8) 99.891%, rgb(255, 127, 8) 99.891%);
 }
 
 
