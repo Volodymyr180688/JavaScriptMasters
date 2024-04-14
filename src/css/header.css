@@ -10,13 +10,17 @@ align-items: center;
 
 .fatherSection{
     position: absolute;
-    width: 343px;
+    width: 100%;
     height: 80px;
     left: 16px;
     top: 32px;
-    padding: 0px;
+}
+
+.centering{
+    margin: 0 auto;
     display: flex;
-    gap: 143px;
+    justify-content: space-between;
+    max-width: 343px;
 }
 
 .li-Cuild-Ul{
@@ -44,8 +48,9 @@ text-decoration-line: underline;
 }
 
 .logo-flex{
-display: flex;
-gap: 8px;
+    display: flex;
+    gap: 8px;
+    max-width: 172px;
 }
 
 .logo-jef{
@@ -121,8 +126,7 @@ background-color: rgba(0,0,0,0.4);
 .modal-content {
     background: linear-gradient(270deg, rgb(28, 29, 32) 49.826%, rgb(105, 41, 45) 67.37%, rgb(237, 59, 68) 98.722%);
     margin: auto;
-    padding: 20px;
-    height: 100vh;
+    height: 100%;
 }
 
 .close {
@@ -151,13 +155,23 @@ cursor: pointer;
 @media screen and (min-width: 768px){
 
 .containerHeader{
-width: 798px;
+width: 768px;
 padding: 0 15px;
 }
 
 .fatherSection{
-width: 704px;
-height: 80px;
+    position: absolute;
+    width: 715px;
+    height: 80px;
+    left: 32px;
+    right: 21px;
+    top: 32px;
+    bottom: 8992px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
 }
 
 .iconBurger{

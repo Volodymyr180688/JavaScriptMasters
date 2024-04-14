@@ -29,7 +29,7 @@
 }
 .kingText{
 
-    position: absolute;
+    position: relative;
     left: 16px;
     top: 281px;
     color: rgb(250, 250, 250);
@@ -39,7 +39,7 @@
     line-height: 50px;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    width: 342px;
+    max-width: 342px;
 }
 
 .link-message{
@@ -105,24 +105,24 @@
 @media screen and (min-width: 768px){
 
 .containerHero{
-    width: 798px;
+    width: 768px;
     padding: 0 15px;
 }
 .fatherHeroSaction{
 
-    position: absolute;
-    width: 343px;
-    height: 80px;
-    left: 16px;
-    right: 16px;
-    top: 32px;
-    bottom: 8015px;
+    /* position: absolute; */
+    width: 100%;
+    /* height: 80px; */
+    /* left: 16px; */
+    /* right: 16px; */
+    /* top: 32px; */
+    /* bottom: 8015px; */
     /* Auto layout */
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0px;
+    align-items: flex-start; */
+    /* padding: 0px; */
 
     width: 715px;
     height: 80px;
