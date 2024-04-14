@@ -1,32 +1,24 @@
+
+/*=====================================================Section 1- about-me====================*/
+
 .about-me-container {
   margin-left: auto;
-  margin-right: auto;
-
-}
+  margin-right: auto;}
 .about-me-section{
 padding-top: 32px;
-padding-bottom: 32px;
-}  
-
+padding-bottom: 32px;}  
 .about-me-description {
   max-width: 100%;
   border-radius: 24px;
-  background: rgb(36, 37, 39);
- 
-
-}
-
+  background: rgb(36, 37, 39);}
 .about-me-wrapper {
   max-width: 343px;
   padding-left: 32px;
   padding-right: 32px;
   padding-top: 32px;
-  padding-bottom: 272px;
-
-}
-
+  padding-bottom: 272px;}
 .about-me-text {
-  font-family: Inter;
+  font-family: Inter,sans-serif;
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
@@ -35,15 +27,12 @@ padding-bottom: 32px;
   text-transform: uppercase;
   color: #ffff;
 }
-
 .func {
   color: rgb(237, 59, 68);
 }
-
 .websites {
   color: rgba(250, 250, 250, 0.4);
 }
-
 .picture{
   margin-top: 16px;
   border-radius: 24px;
@@ -54,13 +43,12 @@ padding-bottom: 32px;
 }
 
 
-
-/*================================================================*/
+/*===============================Section-Accordion=================================*/
 .accordion-ab {
   position: relative;
   margin-bottom: 20px;
-  padding: 20px;
-}
+  padding: 20px;}
+
 
 .accordion-in-about-me{
   margin-left: 16px;
@@ -68,14 +56,12 @@ padding-bottom: 32px;
   margin-right: 16px;
   margin-bottom: 0;
   display: flex;
-  flex-wrap: nowrap;
-}
+  flex-wrap: nowrap;}
 
 .about-me-title span {
   position: absolute;
   top: 40%;
-  right: 5px;
-}
+  right: 5px;}
 
 .about-me-title h2 {
 color: rgba(250, 250, 250, 0.4);
@@ -85,8 +71,7 @@ font-weight: 600;
 line-height: 1.5px;
 letter-spacing: -0.02em;
 text-align: left;
-text-transform: uppercase;
-}
+text-transform: uppercase;}
 
 .ac-icon {
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -96,8 +81,7 @@ text-transform: uppercase;
   height: 20px;
   margin-left: auto;
   transform: rotate(0);
-  transition: all 0.1s ease-in;
-}
+  transition: all 0.1s ease-in;}
 
 .accordion-open {
   color: white;
@@ -109,25 +93,20 @@ text-transform: uppercase;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
     opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
   line-height: 24px;
-  letter-spacing: -0.02em;
-}
+  letter-spacing: -0.02em;}
 
 .accordion-open.active {
   visibility: visible;
   opacity: 1;
-  padding: 20px 20px 20px 0;
+  padding: 20px 20px 20px 20px;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
-    opacity 0.1s ease-out, visibility 0.1s ease-out;
-}
+    opacity 0.1s ease-out, visibility 0.1s ease-out;}
 
 .accordion-open + span svg {
   transform: rotate(180deg);
-  transition: all 0.5s ease-in;
-}
-
+  transition: all 0.5s ease-in;}
 .accordion-open.active + span svg {
-  transform: rotate(0);
-}
+  transform: rotate(0);}
 
 .first-title-text{
   font-family:Inter Tight,sans-serif;
@@ -151,21 +130,43 @@ text-transform: uppercase;
 .line-between-accordion-item{
 margin-top: 20px;
 max-width: 100%;
-
 border: 1px solid rgba(250, 250, 250, 0.2);}
 
 
+.carousel-about-me-list{
+  width: 200px;
+}
 
+.carousel-about-me-list{
+  width: 100%;
+}
+.carousel-about-me-item{
+  width: 130px;
+  height: 130px;
+  border: rgba(250, 250, 250, 0.20) solid 1px;
+  border-radius: 50% ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-/*=================================================================*/
+.swiper-button-next{
+  padding: 20px;
+  background-color: #8a8a8a;
+}
+
+.swiper-wrapper{
+  
+
+}
+/*===============================MEDIA TABLET==================================*/
 
 
 @media screen and (min-width: 768px) {
   .about-me-container {
     margin-left: 32px;
     margin-right: 32px;
-    width: 704px;
-  }
+    width: 704px; }
 
   .about-me-section {
     padding-top: 41px;
@@ -177,32 +178,28 @@ border: 1px solid rgba(250, 250, 250, 0.2);}
     height: 673px;
     background: rgb(36, 37, 39);
   }
-
   .about-me-wrapper {
     max-width: 576px;
     height: auto;
     left: 64px;
     right: 64px;
     top: 64px;
-    bottom: 436px;
-  }
+    bottom: 436px;}
 
   .about-me-text {
-    font-family: Inter Tight,sans-serif;
+    font-family: Inter,sans-serif;
     font-size: 38px;
     font-weight: 500;
     line-height: 1.05;
     letter-spacing: -0.03em;
     text-align: left;
-    text-transform: uppercase;
-  }
+    text-transform: uppercase;}
 
   .picture {
     margin-top: 16px;
     border-radius: 24px;
     overflow: hidden;
-    max-width: 704px;
-  }
+    max-width: 704px;}
 
   .line-between-accordion-item {
     margin-top: 32px;
@@ -214,78 +211,57 @@ border: 1px solid rgba(250, 250, 250, 0.2);}
     display: flex;
     flex-wrap: wrap;
   }
-
-  .swiper-skill-list-next {
-    height: 50px;
-    width: 50px;
-    margin-top: 20px;
-    position: absolute;
-    right: 0;
-    bottom: 35%;
-    z-index: 5;
-  }
-  .swiper-skills-slide  button{
-    border: 1px solid gray;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-  }
 }
 
+
+
+/*============================MEDIA DESKTOP===========================*/
   
 @media screen and (min-width: 1440px) {
   .about-me-container {
     width: 1376px;
-    display: flex;
-  }
+    display: flex;}
   .about-me-description-and-photo-wrapper{
-      
       display: flex;
-      gap:16px;
-
-  }
+      gap:16px;}
   .about-me-section {
     padding-top: 48px;
-    padding-bottom: 82px;
-  }
+    padding-bottom: 82px;}
 
 .first-title-about-me{
   margin-left: 696px;
-  margin-bottom: 24px;
-
-}
+  margin-bottom: 24px;}
 
   .about-me-description {
     border-radius: 24px;
     background: rgb(36, 37, 39);
     width: 680px;
-    height: 700px;
-  }
+    height: 700px;}
 
   .about-me-description-wrapper {
    max-width: 552px;
-    height: 200px;
-    left: 64px;
-    right: 64px;
-    top: 64px;
-    bottom: 436px;
+   height: 200px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 64px;
+    padding-bottom: 436px;
   }
 
   .picture {
-    
     border-radius: 24px;
     overflow: hidden;
-    max-width: 680px;
-    
-  }
+    max-width: 680px;}
   .line-between-accordion-item{
     margin-top: 32px;
     max-width: 1376px;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-  }
- 
- 
+    border: 1px solid rgba(250, 250, 250, 0.2);}
  
 }
   
 
+/*============================SWIPE SKILL LIST================================*/
+
+
+.container-swiper{
+
+}
