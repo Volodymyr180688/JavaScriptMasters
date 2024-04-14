@@ -130,13 +130,6 @@ text-transform: uppercase;
   transform: rotate(0);
 }
 
-.js-enabled  {
-  visibility: hidden;
-}
-.is-active  {
-  visibility: visible;
-}
-
 .first-title-text{
   font-family:Inter Tight,sans-serif;
   font-weight: 500px;
