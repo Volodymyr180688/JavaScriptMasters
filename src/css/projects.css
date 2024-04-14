@@ -1,11 +1,4 @@
 
-.projects {
-  width: 343px;
-  height: 952px;
-  margin: 39px auto 64px auto;
-}
-
-
 .swiper-wrapper {
   display: flex;
 }
@@ -127,15 +120,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
-
-  .projects {
-    width: 704px;
-    height: 1379px;
-    margin: 71px auto 96px auto;
-  }
-
-
   .swiper-slide {
     width: 704px !important;
     height: 1191px;
@@ -180,15 +164,7 @@
 
 
 @media screen and (min-width: 1440px) {
-  .projects {
-    width: 1376px;
-    height: 813px;
-    margin: 139px 32px 164px 32px;
-  }
-
-
-
-  .swiper-slide {
+ .swiper-slide {
     flex-direction: row;
     width: 1376px !important;
     height: 625px;

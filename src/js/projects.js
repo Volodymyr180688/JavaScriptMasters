@@ -15,16 +15,6 @@ const swiper = new Swiper('.swiper', {
   centeredSlides: true,
   slidesPerView: 'auto',
   autoHeight: true,
-  // on: {
-  //   reachEnd: function () {
-  //     const nextButton = document.querySelector('.next-btn');
-  //     nextButton.disabled = true;
-  //   },
-  //     reachBeginning: function () {
-  //     const nextButton = document.querySelector('.next-btn');
-  //     nextButton.disabled = false;
-  //   },
-  // },
 on: {
     slideChangeTransitionEnd: function () {
       const nextButton = document.querySelector('.next-btn');
