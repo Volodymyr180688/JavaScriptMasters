@@ -1,4 +1,4 @@
-.about-me-container {
+/* .about-me-container {
     margin-left: auto;
     margin-right: auto;}
   .about-me-section{
@@ -40,7 +40,7 @@
   }
   
   /*===============================Section-Accordion=================================*/
-  .accordion-ab {
+   .accordion-ab {
     position: relative;
     margin-bottom: 20px;
     padding: 20px;}
@@ -125,13 +125,13 @@
   .line-between-accordion-item{
   margin-top: 20px;
   max-width: 100%;
-  border: 1px solid rgba(250, 250, 250, 0.2);}
+  border: 1px solid rgba(250, 250, 250, 0.2);} */
   
   
   
   /*===============================MEDIA TABLET==================================*/
   
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     .about-me-container {
       margin-left: 32px;
       margin-right: 32px;
@@ -181,11 +181,11 @@
       flex-wrap: wrap;
     }
   }
-  
+   */
   
   /*============================MEDIA DESKTOP===========================*/
     
-  @media screen and (min-width: 1440px) {
+  /* @media screen and (min-width: 1440px) {
     .about-me-container {
       width: 1376px;
       display: flex;}
@@ -225,5 +225,5 @@
       border: 1px solid rgba(250, 250, 250, 0.2);}
    
   }
-    
+     */
   
