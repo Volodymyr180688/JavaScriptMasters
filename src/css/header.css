@@ -138,6 +138,20 @@ font-size: 28px;
 font-weight: bold;
 }
 
+<<<<<<< Updated upstream
+=======
+.positionHeader{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+
+} 
+
+} 
+
+
+
+>>>>>>> Stashed changes
 .close:hover,
 .close:focus {
 color: #000;
