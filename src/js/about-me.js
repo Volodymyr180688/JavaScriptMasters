@@ -1,10 +1,10 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+
+
 
 const titles = document.querySelectorAll('.about-me-title');
-const contents = document.querySelectorAll('.accordion-open');
+const contents = document.querySelectorAll('.accordion-open-about-me');
 
 titles.forEach(item => {
   item.addEventListener('click', () => {
@@ -14,6 +14,7 @@ titles.forEach(item => {
 
     if (activeContent.classList.contains('active')) {
       activeContent.classList.remove('active');
+      activeContent.classList.add('accordion-open');
       activeContent.style.maxHeight = 0;
     } else {
       contents.forEach(element => {
@@ -28,5 +29,4 @@ titles.forEach(item => {
     }
   });
 });
-
 
