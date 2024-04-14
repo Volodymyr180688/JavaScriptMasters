@@ -69,15 +69,34 @@ margin-right: auto;}
     overflow: hidden;
     max-width: 343px;
   }
-  .am-main {
-    display: flex;
 
-    flex-direction: column;
-    max-width: 100%;
-    height: 608px; 
- 
+
+  li.accordion {
+    margin-bottom: 0;
   }
-  .am-accordion-wrap {
+  
+  .accordion-ab {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .accordion-in-about-me{
+    margin-left: 16px;
+    margin-top: 0;
+    margin-right: 16px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-me-title span {
+    position: absolute;
+    top: 40%;
+    right: 5px;
+  }
+  
+  .about-me-title h2 {
   color: rgba(250, 250, 250, 0.4);
   font-family: Inter Tight,sans-serif;
   font-size: 16px;
@@ -86,107 +105,113 @@ margin-right: auto;}
   letter-spacing: -0.02em;
   text-align: left;
   text-transform: uppercase;
-  display: flex;
-  justify-content: space-between;
   }
   
+  .ac-icon {
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    transform: rotate(0);
+    transition: all 0.1s ease-in;
+  }
 
+  .accordion-open {
+    color: white;
+    box-sizing: content-box;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out,
+      opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+  }
   
-  .panel-about-me-list {
+  .accordion-open.active {
+    visibility: visible;
+    opacity: 1;
+    padding: 20px 20px 20px 0;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out,
+      opacity 0.1s ease-out, visibility 0.1s ease-out;
+  }
+  
+  .accordion-open + span svg {
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in;
+  }
+  
+  .accordion-open.active + span svg {
+    transform: rotate(0);
+  }
+  
+  .first-title-text{
+    font-family:Inter Tight,sans-serif;
+    font-weight: 500px;
+    font-size: 16px;
+    color: #ffff;}
+  
+  .first-title-about-me{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     row-gap: 32px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
-  .panel-about-me-text {
-  font-family:Inter Tight,sans-serif;
-  font-weight: 500px;
-  font-size: 16px;
-  color: #ffff;}
-
-
-  .about-me-accordion-panel-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    row-gap: 10px;}
+    padding-bottom: 48px;
+    padding-top: 32px;}
     
+.accordion-in-about-me{
+      margin-top: 32px;
 
-  
-  .ac {
-    margin-top: 8px;
-    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-    box-sizing: border-box;
-    width: 100%;
-  }
+    }
 
 
-  
-  .ac .ac-header {
-    margin: 0;
-    padding: 0;
-  }
-  .ac .ac-trigger {
-    text-align: left;
-    width: 100%;
-    padding: 8px 32px 8px 8px;
-    display: block;
-    cursor: pointer;
-    background-color: transparent;
-    transition: color 0.25s ease;
-    position: relative;
-    text-decoration: none;
-    border: 0;
-    color: rgba(250, 250, 250, 0.4); 
-    height: 72px;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-  }
- .ac .ac-trigger {
-    color: rgba(250, 250, 250, 0.4);
-  }
-  .ac .ac-trigger:focus {
-    color: #8a8a8a;
-  }
-  .ac .ac-panel {
-    overflow: hidden;
-    transition-property: height, visibility;
-    transition-timing-function: ease;
-    transition: all 1s ease-in;
-  }
-  .ac .ac-panel .ac-text {
-    padding: 8px;
-    margin: 0;
-    text-align: right;
-  }
-  .ac-icon {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 100px;
-    padding: 10px;
-    margin-left: auto;
-    transform: rotate(0);
-    transition: all 0.1s ease-in;
-  }
-  
-  .ac-icon-active {
-    transform: rotate(180deg);
-    transition: all 0.1s ease-in;
-  }
-  .ac.js-enabled .ac-panel {
-    visibility: hidden;
-    transition: all 1s ease-in;
-  }
-  .ac.is-active .ac-panel {
-    visibility: visible;
-    transition: all 1s ease-in;
-  }
-  
-  
+.line-between-accordion-item{
+  margin-top: 20px;
+  max-width: 343px;
+  min-width: 320px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+
+.about-me-swiper {
+  margin-top: 32px;
+
+}
+
+.about-me-swiper-wrapper {
+  display: flex;
+  position: relative;
+}
+
+
+.about-me-swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.about-me-swiper-slide-backing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ed3b44;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+
+
 
   @media screen and (min-width: 768px) {
     .about-me-container {
@@ -232,9 +257,26 @@ margin-right: auto;}
       max-width: 704px;
     }
   
- 
- 
-}
+    .accordion-in-about-me{
+      margin-top: 32px;
+    }
+    .about-me-swiper {
+      margin-top: 64px;
+    }
+  
+    .about-me-swiper-slide {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .about-me-swiper-slide-backing {
+      width: 200px;
+      height: 200px;
+    }
+
+
+  }    
+
     
   @media screen and (min-width: 1440px) {
     .about-me-container {
@@ -251,7 +293,11 @@ margin-right: auto;}
       padding-bottom: 82px;
     }
   
-  
+  .first-title-about-me{
+    margin-left: 696px;
+    margin-bottom: 24px;
+
+  }
   
     .about-me-description {
       border-radius: 24px;
@@ -274,19 +320,28 @@ margin-right: auto;}
       border-radius: 24px;
       overflow: hidden;
       max-width: 680px;
+      
+    }
+
+    .line-between-accordion-item{
+      margin-top: 32px;
+      max-width: 1376px;
+      border: 1px solid rgba(250, 250, 250, 0.2);
+    }
+   
+    .about-me-swiper {
+      margin-top: 96px;
     }
   
-   .panel-about-me-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 32px;}
-   
-  .about-me-accordion-panel {
-    margin-left: 696px;
-    margin-bottom: 24px;
-    
-  }
+    .about-me-swiper-slide {
+      width: 200px;
+      height: 200px;
+    }
   
+    .about-me-swiper-slide-backing {
+      width: 200px;
+      height: 200px;
+    }
+   
   }
     
