@@ -63,7 +63,7 @@ font-family: Inter;
 font-size: 16px;
 font-weight: 500;
 line-height: 19px;
-letter-spacing: -2%;
+letter-spacing: 0.02em;
 text-align: left;
 text-decoration-line: underline;
 } */
@@ -88,7 +88,7 @@ border-radius: 18px;
 
 .link-item{
 width: 164px;
-Size: 16px;
+font-size: 16px;
 height: 19.36px;
 color: #FAFAFA;
 display: flex;
