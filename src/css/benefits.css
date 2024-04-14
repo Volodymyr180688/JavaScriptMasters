@@ -35,18 +35,19 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0;
+  gap: 16px;
 }
 
 .benefits-card {
   background-color: rgb(36, 37, 39);
   border-radius: 20px;
 
-  width: 296px;
-  height: 222px;
+  width: 344px;
+  height: 270px;
+}
 
-  height: 294px;
-
+.benefits-card-content {
+  padding: 24px;
 }
 
 .benefits-card-icon-container {
@@ -105,12 +106,19 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: #fafafa;
+}
 
-  margin-top: 16px;
+.benefits-link:focus,
+.benefits-link:hover {
+  border: 1px solid #fafafa;
+}
+
+.benefits-last-child {
+  margin-bottom: 39px;
 }
 
 .benefits-content {
-  margin-bottom: 39px;
+  margin-bottom: 80px;
 }
 
 @media screen and (max-width: 376px) {
@@ -134,7 +142,7 @@
   .benefits-list {
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 16px;
+    gap: 16px;
   }
 }
 
