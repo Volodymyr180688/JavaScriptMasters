@@ -3,11 +3,10 @@
 
 @import url(./reset.css);
 
-
-.containerHeader{
+/* .containerHeader{
 display: flex;
 align-items: center;
-}
+} */
 
 .fatherSection{
     position: absolute;
@@ -16,6 +15,8 @@ align-items: center;
     left: 16px;
     top: 32px;
     padding: 0px;
+    display: flex;
+    gap: 143px;
 }
 
 .li-Cuild-Ul{
@@ -97,10 +98,6 @@ justify-content: center;
 align-items: center;
 }
 
-.positionBurger{
-display: flex;
-gap: 143px;
-}
 
 .iconBurger{
 width: 28px;
