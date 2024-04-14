@@ -1,3 +1,4 @@
+
 const modal = document.querySelector("#myModal");
 const btn = document.querySelector("#myBtn");
 const span = document.querySelector(".close");
@@ -24,3 +25,4 @@ function clickEscapeModal(e){
         modal.style.display = 'none' 
     }
 }
+
