@@ -1,6 +1,10 @@
 li.accordion {
   margin-bottom: 0;
 }
+.faq-section {
+  margin-top: 64px;
+  margin-bottom: 38px;
+}
 
 .accordion {
   position: relative;
@@ -11,15 +15,13 @@ li.accordion {
 }
 
 .faq-title {
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 16px;
 }
 
 .faq-title span {
   position: absolute;
-  top: 40%;
+  top: 15%;
   right: 5px;
   display: flex;
   justify-content: center;
@@ -31,11 +33,19 @@ li.accordion {
 }
 
 .faq-title h2 {
-  color: white;
-  cursor: pointer;
+  color: rgb(250, 250, 250);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  padding-right: 78px;
+  letter-spacing: 0.02em;
+  /* cursor: pointer; */
 }
 
 .accordion-open {
+  margin: 0;
   box-sizing: content-box;
   overflow: hidden;
   max-height: 0;
@@ -43,18 +53,20 @@ li.accordion {
   visibility: hidden;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
     opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
-  font-weight: 500;
-  letter-spacing: -0.02em;
 }
 
-.accordion-open {
+.accordion-open p {
+  padding-top: 16px;
   color: gray;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 24px;
 }
 
 .accordion-open.active {
   visibility: visible;
   opacity: 1;
-  padding: 20px 20px 20px 0;
+  padding: 0;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
     opacity 0.1s ease-out, visibility 0.1s ease-out;
 }
@@ -105,5 +117,36 @@ li.accordion {
   .border-none {
     border-right: none;
     border-left: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
+  .faq-title-left {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .faq-title-left span {
+    width: 40px;
+    height: 40px;
+    right: 32px;
+    top: 32px;
+  }
+
+  .faq-title-left h2 {
+  }
+
+  .faq-title-right {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+  }
+
+  .faq-title-right span {
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 32px;
+  }
+
+  .faq-title-right h2 {
   }
 }
