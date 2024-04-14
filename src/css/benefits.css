@@ -41,10 +41,12 @@
 .benefits-card {
   background-color: rgb(36, 37, 39);
   border-radius: 20px;
+
   width: 296px;
   height: 222px;
-  margin-bottom: 16px;
-  padding: 24px;
+
+  height: 294px;
+
 }
 
 .benefits-card-icon-container {
@@ -111,7 +113,7 @@
   margin-bottom: 39px;
 }
 
-@media screen and (max-width: 374.98px) {
+@media screen and (max-width: 376px) {
   .container {
     max-width: 375px;
   }
