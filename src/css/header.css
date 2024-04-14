@@ -1,9 +1,7 @@
 
-.containerHeader{
-display: flex;
-align-items: center;
-}
+@import url(./reset.css);
 
+/* =============================Mobile Styles============================= */
 .centering{
     display: flex;
     justify-content: space-between;
@@ -111,7 +109,7 @@ display: flex;
 width: 28px;
 height: 28px;
 }
-
+/*=============================Mobile Styles=============================*/
 
 .modal {
 display: none; 
@@ -142,15 +140,9 @@ height: 812px;
     top: 32px;
 }
 
+/* =============================Tablet Styles============================= */
+@media screen and (min-width: 768px){
 
-  /*=============================Mobile Styles=============================*/
-  
-  /* =============================Tablet Styles============================= */
-
-  @media screen and (min-width: 768px){
-
-
-    
     .fatherSection{
     width: 704px;
     height: 80px;
@@ -162,12 +154,12 @@ height: 812px;
     
     @Media(-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
+
     .logo{
     background-image: url('../images/logo_vector@2x.jpeg');
     }
     }
-    
     }
-  
-  /* =============================Tablet Styles============================= */
+
+/*=============================Tablet Styles=============================*/
 
