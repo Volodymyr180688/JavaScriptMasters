@@ -14,6 +14,17 @@
     display:none;
 }
 
+
+.fatherSection{
+/* position: absolute; */
+width: 343px;
+height: 80px;
+left: 16px;
+right: 16px;
+top: 32px;
+padding: 0px;
+margin: 0 auto;
+
 .centering{
     display: flex;
     justify-content: space-between;
@@ -21,11 +32,12 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 343px;
+
 }
 
 .li-Cuild-Ul{
 gap: 12px;
-position: absolute;
+/* position: absolute; */
 height: 152px;
 left: 150px;
 right: 151px;
@@ -79,7 +91,7 @@ align-items: center;
 border-radius: 60px;
 background: rgb(237, 59, 68);
 margin: 0 auto;
-position: absolute;
+/* position: absolute; */
 width: 164px;
 height: 45px;
 left: 115px;
@@ -133,11 +145,24 @@ background-color: rgba(0,0,0,0.4);
 .close {
     color: #aaaaaa;
     float: right;
+
+    width: 28px;
+    right: 28px;
+    top: 32px;
+}
+
+/* .positionHeader{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+} */
+
     right: 0px;
     width: 40px;
     top: 32px;
     position: relative;
 }
+
 
 .close:hover,
 .close:focus {
