@@ -1,11 +1,11 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+// import Swiper from 'swiper';
+// import { Navigation, Pagination } from 'swiper/modules';
 
 
 const titles = document.querySelectorAll('.about-me-title');
-const contents = document.querySelectorAll('.accordion-open');
+const contents = document.querySelectorAll('.accordion-open-about-me');
 
 titles.forEach(item => {
   item.addEventListener('click', () => {
@@ -32,43 +32,43 @@ titles.forEach(item => {
 });
 
 
-const swiperAboutMe = document.querySelector("#carousel-about-me-list");
+// const swiperAboutMe = document.querySelector("#carousel-about-me-list");
 
-const buttonEl = document.querySelector('.swiper-button-next');
+// const buttonEl = document.querySelector('.swiper-button-next');
 
-const swiper = new Swiper(swiperAboutMe, {
-  modules: [Navigation, Pagination,],
-  direction: 'horizontal',
-  spaceBetween: 0,
-  navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
-  slidesPerView: 2,
-  initialSlide: 1,
-  updateOnWindowResize: true,
-    breakpoints: {
-        319: {
-        slidesPerView:1,
-    },
-    767: {
-      slidesPerView: 2,
-    },
-    1440: {
-      slidesPerView: 3,
-    },
-  },
-  mousewheel: {
-    enabled: true,
-    invert: true,
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-  loop: true,
-  allowTouchMove: true,
-  followFinger: true,
-  simulateTouch: true,
-});
+// const swiper = new Swiper(swiperAboutMe, {
+//   modules: [Navigation, Pagination,],
+//   direction: 'horizontal',
+//   spaceBetween: 0,
+//   navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//   },
+//   slidesPerView: 2,
+//   initialSlide: 1,
+//   updateOnWindowResize: true,
+//     breakpoints: {
+//         319: {
+//         slidesPerView:1,
+//     },
+//     767: {
+//       slidesPerView: 2,
+//     },
+//     1440: {
+//       slidesPerView: 3,
+//     },
+//   },
+//   mousewheel: {
+//     enabled: true,
+//     invert: true,
+//   },
+//   keyboard: {
+//     enabled: true,
+//     onlyInViewport: true,
+//   },
+//   loop: true,
+//   allowTouchMove: true,
+//   followFinger: true,
+//   simulateTouch: true,
+// });
 
