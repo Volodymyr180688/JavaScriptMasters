@@ -25,3 +25,4 @@ function clickEscapeModal(e){
         modal.style.display = 'none' 
     }
 }
+

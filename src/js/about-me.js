@@ -3,8 +3,10 @@ import 'accordion-js/dist/accordion.min.css';
 
 
 
+
 const titles = document.querySelectorAll('.about-me-title');
 const contents = document.querySelectorAll('.accordion-open-about-me');
+
 
 titles.forEach(item => {
   item.addEventListener('click', () => {
