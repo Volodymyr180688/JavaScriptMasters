@@ -15,7 +15,6 @@
   "author": "JavaScriptMasters <volodymyrshorobura88@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "accordion": "^3.0.2",
     "accordion-js": "^3.3.4",
     "axios": "^1.6.8",
     "lightbox": "^0.5.0",
