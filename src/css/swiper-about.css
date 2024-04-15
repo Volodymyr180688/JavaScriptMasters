@@ -1,11 +1,22 @@
- .carousel-about-me-list{
-    width: 200px;
-  }
-  
-  .carousel-about-me-list{
-    width: 100%;
-  }
-  .carousel-about-me-item{
+ 
+.wiper-about-me-list{
+    width: 100%;}
+
+
+.container-wiper-about-me{
+color: rgb(250, 250, 250);
+font-family: Inter, sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.02em;
+text-align: left;
+width: 100%;
+height: 200px;
+margin-bottom: 96px;
+
+}
+.wiper-about-me-item{
     width: 130px;
     height: 130px;
     border: rgba(250, 250, 250, 0.20) solid 1px;
@@ -14,24 +25,38 @@
     align-items: center;
     justify-content: center;
   }
-.swiper-button-next-about-me{
-       padding: 20px;
-        background-color: #8a8a8a;
+/* .wiper-button-next-about-me{
+padding: 20px;
+background-color: #8a8a8a;
     
-} 
-.carousel-about-me-list{
-    width: 100%;
+}  */
+
+.wiper-slide-about-me:first-child{
+  background-color: #ED3B44;
 }
 
+.wiper-wrapper-about-me {
+  display: flex;
+  justify-content: space-between;
+  /* width: auto;
+} */}
+
+/* .wiper-button-next-about-me::after{
+  display: none;
+} */
+
+
 @media screen and (min-width: 768px){
-    .carousel-about-me-item {
-        width: 200px;
-        height: 200px;
+  .wiper-slide-about-me .wiper-about-me-item {
+    font-size: 20px;
+    width: 200px;
+    height: 200px;
     }
 
 }
 
 @media screen and (min-width: 1440px) {
-
-
+  .wiper-about-me-list{
+    width: 400px;
+  }
 }
