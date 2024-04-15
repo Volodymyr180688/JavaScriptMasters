@@ -1,5 +1,6 @@
 body {
   background-color: rgb(28, 29, 32);
+  font-family: 'Inter Tight', sans-serif;
 }
 
 .container {
@@ -19,12 +20,6 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-@media screen and (max-width: 374.98px) {
-  .container {
-    max-width: 375px;
-  }
 }
 
 @media screen and (min-width: 375px) {

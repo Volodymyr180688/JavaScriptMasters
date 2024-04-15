@@ -1,37 +1,65 @@
- .carousel-about-me-list{
+.swiper-mini-section {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  color: #fafafa;
+}
+
+.swiper-slide-styles {
+  max-width: 100%;
+}
+.about-swiper-button {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 50%;
+  fill: #3b3b3b;
+  box-sizing: border-box;
+  margin-left: 60px;
+}
+
+.slide-one {
+  background-color: rgb(237, 59, 68);
+}
+
+.swiper-button-next .swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #3b3b3b;
+  border-radius: 50%;
+}
+.about-button-next {
+  width: 52px;
+  height: 52px;
+  padding: 10px;
+  background-color: transparent;
+  stroke: #3b3b3b;
+  border: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-item {
     width: 200px;
+    height: 200px;
   }
-  
-  .carousel-about-me-list{
-    width: 100%;
-  }
-  .carousel-about-me-item{
-    width: 130px;
-    height: 130px;
-    border: rgba(250, 250, 250, 0.20) solid 1px;
-    border-radius: 50% ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-.swiper-button-next-about-me{
-       padding: 20px;
-        background-color: #8a8a8a;
-    
-} 
-.carousel-about-me-list{
-    width: 100%;
 }
-
-@media screen and (min-width: 768px){
-    .carousel-about-me-item {
-        width: 200px;
-        height: 200px;
-    }
-
-}
-
 @media screen and (min-width: 1440px) {
-
-
+  .swiper-item {
+    width: 200px;
+    height: 200px;
+  }
 }

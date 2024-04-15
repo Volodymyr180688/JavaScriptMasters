@@ -9,7 +9,7 @@ titles.forEach(item => {
     );
     if (activeContent.classList.contains('active')) {
       activeContent.classList.remove('active');
-      activeContent.classList.add('accordion-open');
+      activeContent.classList.add('accordion-open-about-me');
       activeContent.style.maxHeight = 0;
     } else {
       contents.forEach(element => {
@@ -23,4 +23,5 @@ titles.forEach(item => {
     }
   });
 });
+
 
