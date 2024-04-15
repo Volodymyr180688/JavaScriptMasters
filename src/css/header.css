@@ -5,29 +5,35 @@
 .centering{
     display: flex;
     justify-content: space-between;
-    padding: 0 16px;
+    padding: 0 16px 0 0;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    gap: 143px;
 }
 
-.fatherSection{
-position: absolute;
-width: 343px;
-height: 80px;
-left: 16px;
-right: 16px;
-top: 32px;
-padding: 0px;
-margin: 0 auto;
+
+.father-section{
+    position: absolute;
+    max-width: 343px;
+    height: 80px;
+    left: 16px;
+    right: 16px;
+    top: 32px;
+    padding: 0px;
+    margin: 0 auto;
 }
 
 .menu{
     display: none;
 }
 
-.li-Cuild-Ul{
-gap: 12px;
+.link-order-tablet-dacktop{
+    display: none;
+}
 
+.li-cuild-ul{
+gap: 12px;
 height: 152px;
 left: 150px;
 right: 151px;
@@ -94,7 +100,7 @@ border: none;
 display: none;
 }
 
-.orderH3{
+.order-h3{
 color: #FAFAFA;
 width: 164px;
 height: 45px;
@@ -103,12 +109,7 @@ justify-content: center;
 align-items: center;
 }
 
-.positionBurger{
-display: flex;
-
-}
-
-.iconBurger{
+.icon-burger{
 width: 28px;
 height: 28px;
 }
@@ -146,23 +147,83 @@ height: 812px;
 /* =============================Tablet Styles============================= */
 @media screen and (min-width: 768px){
 
-    .fatherSection{
-    width: 704px;
-    height: 80px;
+
+    .li-cuild-ul{
+display: inline;
+    }
+
+    .menu{
+        width: 42px;
+        height: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: rgb(250, 250, 250);
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-decoration-line: underline;
+    }
+
+.link-order{
+    display: inline;
+}
+
+    .father-section{
+        width: 704px;
+        position: absolute;
+        max-width: 715px;;
+        height: 80px;
+        left: 16px;
+        right: 16px;
+        top: 32px;
+        padding: 0px;
+        margin: 0 auto;
+    }
+
+    .link-order-tablet-dacktop{
+        max-width: 174px;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex: none;
+        order: 2;
+        flex-grow: 0;
+        border-radius: 60px;
+        background: rgb(237, 59, 68);
+        width: 100%;
+    }
+
+    .order-h3-tablet-desktop{
+        color: rgb(250, 250, 250);
+        font-family: Inter;
+        font-weight: 500;
+        line-height: 19px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    .centering{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 16px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 151px;
+        width: 100%;
     }
     
-    .iconBurger{
+    .icon-burger{
     display: none;
     }
-    
-    @Media(-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi) {
+}
 
-    .logo{
-    background-image: url('../images/logo_vector@2x.jpeg');
-    }
-    }
-    }
 
 /*=============================Tablet Styles=============================*/
-
