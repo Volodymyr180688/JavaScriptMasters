@@ -6,6 +6,15 @@ li.accordion {
   margin-bottom: 38px;
 }
 
+.faq-section-title {
+  color: rgba(250, 250, 250, 0.4);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  padding-bottom: 32px;
+}
+
 .accordion {
   position: relative;
   margin-bottom: 20px;
@@ -131,9 +140,6 @@ li.accordion {
     top: 32px;
   }
 
-  .faq-title-left h2 {
-  }
-
   .faq-title-right {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -145,8 +151,5 @@ li.accordion {
     height: 40px;
     right: 0;
     top: 32px;
-  }
-
-  .faq-title-right h2 {
   }
 }
