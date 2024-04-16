@@ -5,10 +5,6 @@
   margin-left: auto;
   margin-right: auto;
 }
-.about-me-container {
-  margin-left: 16px;
-  margin-right: 16px;
-}
 .about-me-description {
   max-width: 343px;
   height: 500px;
@@ -122,6 +118,8 @@ img {
 }
 
 .first-title-text {
+  width: 324px;
+  height: 216px;
   font-weight: 500;
   font-size: 16px;
   color: #ffff;
@@ -215,6 +213,11 @@ img {
 
   }
 
+  .first-title-text{
+    width: 612px;
+   height: 144px;
+  }
+
   .about-me-text {
     font-size: 38px;
     font-weight: 500;
@@ -241,7 +244,7 @@ img {
   .first-title-about-me {
     padding-right: 24px;
     width: 614px;
-    padding-right: 64px;
+    padding-right: 58px;
     margin-left: 696px;
     margin-bottom: 24px;
   }

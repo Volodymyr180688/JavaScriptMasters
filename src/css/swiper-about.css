@@ -6,6 +6,7 @@
   overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+  width: 260px;
 
 }
 .about-swiper-wrapper {
@@ -30,10 +31,10 @@
 }
 .about-button-next {
   position: absolute;
-  right: -55px;
+  right: -48px;
   transform: translateY(-50%);
   z-index: 1;
-   width: 52px;
+  width: 52px;
   height: 52px;
   padding: 10px;
   background-color: transparent;
@@ -48,7 +49,7 @@
   }
 
   .swiper-container {
-    width: 600px;
+    width: 604px;
     height: 201px;
   }
 
