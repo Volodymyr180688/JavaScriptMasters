@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(28, 29, 32);
   font-family: 'Inter Tight', sans-serif;
