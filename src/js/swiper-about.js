@@ -17,13 +17,13 @@ const swiper = new Swiper('.swiper-container', {
     },
   breakpoints: {
     375: {
-      slidesPerView: 'auto',
+      slidesPerView: '2',
     },
     768: {
-      slidesPerView: 'auto',
+      slidesPerView: '3',
     },
     1440: {
-      slidesPerView: 'auto',
+      slidesPerView: '4',
     },
   },
 });

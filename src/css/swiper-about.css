@@ -1,11 +1,15 @@
+
+.swiper-container{
+  display: flex;
+ justify-content: center;
+ width: 1000px;
+
+}
 .swiper-mini-section {
   margin-top: 32px;
   margin-bottom: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
-.swiper-item {
+.swiper-item{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,10 +18,6 @@
   border-radius: 100%;
   border: 1px solid rgba(250, 250, 250, 0.2);
   color: #fafafa;
-}
-
-.swiper-slide-styles {
-  max-width: 100%;
 }
 .about-swiper-button {
   width: 38px;
@@ -33,7 +33,11 @@
   margin-left: 60px;
 }
 
-.slide-one {
+.swiper-mini{
+  display: flex;
+  justify-content: center;
+}
+.swiper-item:active {
   background-color: rgb(237, 59, 68);
 }
 
