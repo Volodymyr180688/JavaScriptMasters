@@ -51,14 +51,14 @@ img {
 
 .accordion-ab {
   position: relative;
+  margin-top: 20px;
   margin-bottom: 20px;
-  /* padding: 20px;} */
+
 }
 
 .accordion-in-about-me {
-  /* margin-left: 16px; */
-  margin-top: 0;
-  /* margin-right: 16px; */
+  
+  margin-top: 96px;
   margin-bottom: 0;
   display: flex;
   flex-wrap: nowrap;
@@ -109,7 +109,7 @@ img {
   opacity: 1;
   padding: 20px 30px 20px 0px;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
-    opacity 0.1s ease-out, visibility 0.1s ease-out;
+  opacity 0.1s ease-out, visibility 0.1s ease-out;
 }
 
 .accordion-open-about-me + span svg {
@@ -204,6 +204,7 @@ img {
     display: flex;
     flex-direction: row;
     column-gap: 16px;
+    margin-bottom: 96px;
   }
 
   .about-me-description {
