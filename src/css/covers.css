@@ -1,6 +1,13 @@
+.covers-container {
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 405px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .covers {
   background-color: #3b3b3b;
-  background-image: url('../images/Covers/covers_background.png');
+  background-image: url('/images/Covers/covers_background.png');
   background-repeat: no-repeat;
   background-position: center;
   background-clip: padding-box;
@@ -62,7 +69,7 @@
 
 @media screen and (min-width: 768px) {
   .covers {
-    width: 100%;
+    width: 798px;
     height: 960px;
   }
 
@@ -77,5 +84,10 @@
 
   .marquee {
     gap: 60px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .covers-container {
+    width: 1440px;
   }
 }
