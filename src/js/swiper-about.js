@@ -2,7 +2,7 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 import 'swiper/css/navigation';
 
-const aboutMeNextButton = document.querySelector('.about-button-next');
+const aboutMeNextButton = document.querySelector('.about-button-wrapper');
 const swiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: aboutMeNextButton,
@@ -14,16 +14,17 @@ const swiper = new Swiper('.swiper-container', {
     enabled: true,
     onlyInViewport: true,
     pageUpDown: true,
-    },
-  breakpoints: {
-    375: {
-      slidesPerView: 'auto',
-    },
-    768: {
-      slidesPerView: 'auto',
-    },
-    1440: {
-      slidesPerView: 'auto',
-    },
   },
+  slidesPerView: 'auto',
+on: {
+    slideChangeTransitionEnd: function () {
+      var items = document.querySelectorAll('.swiper-item');
+      items.forEach(function(item) {
+        item.classList.remove('active');
+      });
+      var activeSlideIndex = this.activeIndex;
+      var activeSlide = items[activeSlideIndex];
+      activeSlide.classList.add('active');
+    }
+  }
 });
