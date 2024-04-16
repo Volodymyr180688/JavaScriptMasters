@@ -29,7 +29,7 @@
 .swiper-item.active {
   background-color: #ed3b44;
 }
-.about-button-next {
+.about-button-wrapper {
   position: absolute;
   right: -48px;
   transform: translateY(-50%);

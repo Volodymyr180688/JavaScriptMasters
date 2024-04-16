@@ -38,12 +38,10 @@
   border-radius: 24px;
   overflow: hidden;
   max-width: 343px;
-}
-
-img {
   width: 100%;
   height: auto;
 }
+
 
 .accordion-ab {
   position: relative;
@@ -232,14 +230,10 @@ img {
     border-radius: 24px;
     overflow: hidden;
     max-width: 680px;
-  }
-
-
-  img{
     width: 680px;
     height: 700px;
-
   }
+
 
   .first-title-about-me {
     padding-right: 24px;
