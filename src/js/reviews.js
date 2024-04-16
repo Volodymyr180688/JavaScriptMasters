@@ -39,6 +39,7 @@ const swiper = new Swiper('.reviws-swiper', {
   },
   centeredSlidesPerView: true,
   slidesPerView: 'auto',
+  spaceBetween: 30,
 on: {
     slideChangeTransitionEnd: function () {
       const nextButton = document.querySelector('.reviews-next-btn');
