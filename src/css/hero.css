@@ -3,22 +3,40 @@
 @import url('./reset.css');
 
 .container-hero {
-  width: 375px;
+  width: 100%;
+  max-width: 375px;
   margin: 0 auto;
-  background: linear-gradient(
-    90deg,
-    rgba(148, 19, 27, 1) 11%,
-    rgba(114, 14, 14, 1) 42%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background-size: cover;
+  background-image: url(/images/Hero/hero-mobile.png);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-resolution: 192dpi) { 
+        .container-hero {
+        background-image: url(/images/Hero/hero-tablet-orange@2x.png);
+
+        animation: container-hero 10s infinite;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.container-hero {
+  animation: container-hero 10s infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/Hero/hero-mobile.png);
+}
+
+@keyframes container-hero {
+    0%   { background-image: url(/images/Hero/hero-mobile@2x.png); }
+    33%  { background-image: url(/images/Hero/hero-mobile-orange@2x.png); }
+    66%  { background-image: url(/images/Hero/hero-tablet-green@2x.png); }
+    100% { background-image: url(/images/Hero/hero-tablet-blue.png); }
 }
 
 .father-hero-saction {
-  max-width: 375px;
   width: 100%;
   height: 812px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .position {
@@ -36,18 +54,17 @@
   padding-top: 281px;
   max-width: 342px;
   letter-spacing: -0.03em;
+  margin-bottom: 150px;
+  margin-left: 15px;
 }
 
 .link-message {
-  position: absolute;
-  width: 342px;
   height: 37px;
-  top: 743px;
-  bottom: 32px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: baseline;
   gap: 4px;
+  flex-wrap: wrap;
 }
 
 .item-link-mesage {
@@ -98,46 +115,42 @@
 /* =========================Tablet Style================================ */
 @media screen and (min-width: 768px) {
   .container-hero {
-    min-width: 768px;
+    max-width: 1439px;
     padding: 0px 15px;
     width: 100%;
-    /* background: linear-gradient(357deg, rgb(28, 29, 32) 49.692%, rgb(172, 83, 0) 67.704%, rgb(255, 127, 8) 99.891%, rgb(255, 127, 8) 99.891%); */
-    background-size: 200% 200%;
-    background-image: linear-gradient(
-      45deg,
-      #ff00cc,
-      #3333cc,
-      #ff9933,
-      #66ff33
-    );
-    animation: gradient 10s ease infinite;
+    background-image:url(../images/Hero/hero-tablet-orange.png);
   }
 
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-resolution: 192dpi) { 
+        .container-hero {
+        background-image: url(../images/Hero/hero-tablet-orange@2x.png);
+
+        animation: container-hero 10s infinite;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+}
+
+.container-hero {
+  animation: container-hero 10s infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes container-hero {
+    0%   { background-image: url(../images/Hero/hero-tablet-orange@2x.png); }
+    33%  { background-image: url(../images/Hero/hero-tablet-blue@2x.png); }
+    66%  { background-image: url(../images/Hero/hero-tablet-green@2x.png); }
+    100% { background-image: url(../images/Hero/hero-tablet-orange@2x.png); }
+}
 
   .father-hero-saction {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 0px;
-    width: 100%;
-    min-width: 768px;
     height: 1024px;
   }
 
   .king-text {
-    letter-spacing: 0.03em;
+    letter-spacing: -0.03em;
     font-size: 90px;
     font-weight: 500;
     line-height: 90px;
@@ -146,7 +159,9 @@
     padding-top: 281px;
     max-width: 632px;
     height: 450px;
+    margin: 0 auto;
     padding-left: 24px;
+    margin-bottom: 187px;
   }
 
   .messages {
@@ -162,20 +177,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
   }
 
-  .messages:hover,
-  .messages:hover {
+  .messages:hover{
     background-color: blue;
+    box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
+    1px 2px 4px 0px rgba(0,255,255,0.7),
+    2px 4px 8px 0px rgba(0,255,255,0.7),
+    2px 4px 16px 0px rgba(0,255,255,0.7);
+    background-color: darkblue;
+    color: chocolate;
   }
 
   .link-message {
     gap: 10px;
-    position: absolute;
     width: 100%;
-    inset: 937px 0px 29px 180px;
+    height: 55px;
     display: flex;
     justify-content: center;
+    position: absolute;
+    left: 172px;
   }
 
   .item-link-mesage {
@@ -199,12 +221,18 @@
     box-sizing: border-box;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
+    transition: 0.5s;
   }
 
-  .item-link-mesage-mailto:hover,
-  .item-link-mesage-mailto:hover {
-    background-color: blue;
-  }
+    .item-link-mesage-mailto:hover {
+      background-color: blue;
+      box-shadow: 0px 1px 2px 0px rgba(0,255,255,0.7),
+      1px 2px 4px 0px rgba(0,255,255,0.7),
+      2px 4px 8px 0px rgba(0,255,255,0.7),
+      2px 4px 16px 0px rgba(0,255,255,0.7);
+      background-color: darkblue;
+      color: chocolate;
+    }
 
   .email {
     width: 164px;
@@ -220,3 +248,62 @@
 }
 
 /* =========================Tablet Style================================ */
+
+/* =========================Decktop Style================================ */
+
+@media screen and (min-width:1440px) {
+  
+  .container-hero {
+    padding: 0px 15px;
+    width: 100%;
+    background-image:url(/images/Hero/hero-desctop-orange.png);
+  }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-resolution: 192dpi) { 
+        .container-hero {
+        background-image: url(../images/Hero/hero-desctop-orange@2x.png);
+
+        animation: container-hero 10s infinite;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.container-hero {
+  animation: container-hero 10s infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@keyframes container-hero {
+    0%   { background-image: url(/images/Hero/hero-desctop-orange@2x.png); }
+    33%  { background-image: url(/images/Hero/hero-desctop@2x.png); }
+    66%  { background-image: url(/images/Hero/hero-desctop-green@2x.png); }
+    100% { background-image: url(/images/Hero/hero-desctop-blue.png); }
+}
+
+
+.king-text{
+  letter-spacing: -0.03em;
+  font-size: 90px;
+  font-weight: 500;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: rgb(250, 250, 250);
+  padding-top: 281px;
+  max-width: 1084px;
+  height: 270px;
+  margin: 0px auto 187px;
+  padding-left: 24px;
+}
+
+.link-message{
+  left: 384px;
+  top: 900px;
+}
+
+
+}
+
+/* =========================Decktop Style================================ */
