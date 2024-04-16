@@ -1,22 +1,19 @@
-.swiper-mini-section {
-  width: 343px;
-  height: 130px;
-}
 
 .swiper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 
-  width: 260px;
 }
-
 .about-swiper-wrapper {
   position: relative;
   display: flex;
-
   width: 260px;
   height: 130px;
 }
-
 .swiper-item {
   width: 130px !important;
   height: 130px !important;
@@ -31,14 +28,12 @@
 .swiper-item.active {
   background-color: #ed3b44;
 }
-
 .about-button-next {
   position: absolute;
   right: -55px;
   transform: translateY(-50%);
   z-index: 1;
-
-  width: 52px;
+   width: 52px;
   height: 52px;
   padding: 10px;
   background-color: transparent;
@@ -82,6 +77,8 @@
   .swiper-container {
     width: 1209px;
     height: 202px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .about-swiper-wrapper {
