@@ -1,5 +1,5 @@
-.about-me-section{
-  min-width: 375px;
+.about-me-section {
+  max-width: 375px;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: auto;
@@ -45,7 +45,8 @@
 .accordion-ab {
   position: relative;
   margin-top: 20px;
-  margin-bottom: 20px;}
+  margin-bottom: 20px;
+}
 
 .accordion-in-about-me {
   margin-top: 32px;
@@ -102,7 +103,7 @@
   opacity: 1;
   padding: 20px 30px 20px 0px;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out,
-  opacity 0.1s ease-out, visibility 0.1s ease-out;
+    opacity 0.1s ease-out, visibility 0.1s ease-out;
 }
 
 .accordion-open-about-me + span svg {
@@ -115,8 +116,6 @@
 }
 
 .first-title-text {
-  width: 324px;
-  height: 216px;
   font-weight: 500;
   font-size: 16px;
   color: #ffff;
@@ -140,7 +139,7 @@
 }
 
 @media screen and (min-width: 768px) {
- .about-me-section {
+  .about-me-section {
     min-width: 704px;
     padding-top: 41px;
     padding-bottom: 48px;
@@ -167,16 +166,15 @@
     text-transform: uppercase;
   }
 
-  .first-title-about-me{
+  .first-title-about-me {
     width: 704px;
- }
+  }
 
- .first-title-text{
-  width: 612px;
-  height: 144px;
- }
+  .first-title-text {
+    width: 612px;
+    height: 144px;
+  }
 
-  
   .about-me-photo {
     margin-top: 16px;
     border-radius: 24px;
@@ -202,7 +200,7 @@
 }
 
 @media screen and (min-width: 1440px) {
- .about-me-section {
+  .about-me-section {
     max-width: 1440px;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -215,7 +213,7 @@
     margin-bottom: 96px;
   }
 
-  .accordion-in-about-me{
+  .accordion-in-about-me {
     margin-top: 96px;
     max-width: 1440px;
     justify-content: flex-start;
@@ -228,11 +226,10 @@
     background: rgb(36, 37, 39);
     width: 680px;
     height: auto;
-
   }
-  .first-title-text{
+  .first-title-text {
     width: 612px;
-   height: 144px;
+    height: 144px;
   }
   .about-me-text {
     font-size: 38px;
@@ -242,7 +239,7 @@
     text-align: left;
     text-transform: uppercase;
   }
-  
+
   .about-me-photo {
     margin-top: 0;
     border-radius: 24px;
@@ -251,7 +248,6 @@
     width: 680px;
     height: 700px;
   }
-
 
   .first-title-about-me {
     padding-right: 24px;
