@@ -13,7 +13,6 @@ body {
 }
 
 .covers-container {
-
   min-width: 400px;
   overflow: hidden;
   padding: 0;
@@ -32,12 +31,12 @@ body {
 
 .marquee {
   width: 100%;
-  background-color: #1C1D20;
+  background-color: #1c1d20;
   right: -800px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-  font-family: "Pridi", sans-serif;
+  font-family: 'Pridi', sans-serif;
   position: relative;
 }
 
@@ -47,7 +46,6 @@ body {
   align-items: center;
   justify-content: flex-end;
   gap: 24px;
-
 }
 
 .marquee__line {
@@ -93,7 +91,6 @@ body {
     height: 960px;
     overflow: hidden;
     padding: 0;
-
   }
 
   .content-covers {
@@ -116,96 +113,11 @@ body {
     height: 960px;
     overflow: hidden;
     padding: 0;
-
   }
 
   .marquee {
     width: 100%;
-    background-color: #1C1D20;
+    background-color: #1c1d20;
     right: -1800px;
   }
 }
-
-/* ========== Попередня версія =============== */
-
-/* .covers {
-  background-color: #3b3b3b;
-  background-image: url('../images/Covers/covers_background.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-clip: padding-box;
-  background-size: cover;
-
-  width: 100%;
-  height: 508px;
-  overflow: hidden;
-}
-
-.content {
-  position: relative;
-}
-
-.marquee {
-  position: absolute;
-  right: -800px;
-  left: -800px;
-  overflow: hidden;
-}
-
-.covers-img {
-  height: 162px;
-  width: 282px;
-}
-
-.marquee__inner {
-  display: flex;
-  gap: 40px;
-  transform: rotate(16deg);
-  overflow: hidden;
-}
-
-.marquee {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.marquee__line {
-  flex-shrink: 0;
-
-  white-space: nowrap;
-  animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes marqueeLine {
-  from {
-    transform: translateX(-20%);
-  }
-
-  to {
-    transform: translateX(-180%);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .covers {
-    width: 100%;
-    height: 960px;
-  }
-
-  .covers-img {
-    height: 314px;
-    width: 544px;
-  }
-
-  .marquee__inner {
-    gap: 60px;
-  }
-
-  .marquee {
-    gap: 60px;
-  }
-} */
