@@ -4,15 +4,8 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
   width: 262px;
-  margin-bottom: 48px;
-}
 
-
-.swiper-mini-section {
-  min-width: 376px;
-  height: 224px;
 }
 .about-swiper-wrapper {
   display: flex;
@@ -47,21 +40,10 @@
 
 
 @media screen and (min-width: 768px) {
-  .swiper-mini-section {
-    max-width: 789px;
-    height: 224px;
-  }
-
+ 
   .swiper-container {
-    width: 606px;
-    height: 224px;
+    width: 604px;
   }
-
-  .about-swiper-wrapper {
-    width: 600px;
-    height: 200px;
-  }
-
   .swiper-item {
     width: 200px !important;
     height: 200px !important;
@@ -72,11 +54,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .swiper-mini-section {
-    max-width: 1348px;
-  }
-
-  .swiper-container {
+ .swiper-container {
     width: 1209px;
     height: 202px;
     margin-left: auto;
