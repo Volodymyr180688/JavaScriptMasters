@@ -1,4 +1,134 @@
-.covers {
+/* ====== оновлена версія, попередня - нижче закомітчена ============  */
+
+.covers-section {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+}
+
+.covers-container {
+
+  min-width: 400px;
+  overflow: hidden;
+  padding: 0;
+  background-image: url('../images/covers/background_covers.png');
+  background-color: #3b3b3b;
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: 300%;
+  background-size: cover;
+}
+
+.content-covers {
+  width: 100%;
+  height: 508px;
+}
+
+.marquee {
+  width: 100%;
+  background-color: #1C1D20;
+  right: -800px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-family: "Pridi", sans-serif;
+  position: relative;
+}
+
+.marquee__inner {
+  display: flex;
+  transform: rotate(16deg);
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+
+}
+
+.marquee__line {
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-right: 10px;
+  display: flex;
+  width: 70%;
+  white-space: nowrap;
+  animation-name: marqueeLine;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.marquee__line_img {
+  border-radius: 10px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.marquee__line_img:hover {
+  transform: scale(103%);
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(-20%);
+  }
+
+  to {
+    transform: translateX(-180%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .marquee__line {
+    width: 65%;
+  }
+
+  .covers-container {
+    margin: 0 0;
+    min-width: 768px;
+    height: 960px;
+    overflow: hidden;
+    padding: 0;
+
+  }
+
+  .content-covers {
+    width: 100%;
+  }
+
+  .marquee {
+    gap: 56px;
+    right: -1000px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .marquee__line {
+    width: 40%;
+  }
+
+  .covers-container {
+    min-width: 1440px;
+    height: 960px;
+    overflow: hidden;
+    padding: 0;
+
+  }
+
+  .marquee {
+    width: 100%;
+    background-color: #1C1D20;
+    right: -1800px;
+  }
+}
+
+/* ========== Попередня версія =============== */
+
+/* .covers {
   background-color: #3b3b3b;
   background-image: url('../images/Covers/covers_background.png');
   background-repeat: no-repeat;
@@ -78,4 +208,4 @@
   .marquee {
     gap: 60px;
   }
-}
+} */
