@@ -24,6 +24,10 @@
   display: none;
 }
 
+.hidden-menu{
+  display: none;
+}
+
 .link-order-tablet-dacktop {
   display: none;
 }
@@ -33,8 +37,8 @@
   height: 152px;
   display: flex;
   align-items: center;
-  margin-bottom: 291px;
   flex-direction: column;
+  margin: 230px;
 }
 
 .reff {
@@ -121,16 +125,43 @@
 }
 
 .modal-content {
-  background: linear-gradient(
-    270deg,
-    rgb(28, 29, 32) 49.826%,
-    rgb(105, 41, 45) 67.37%,
-    rgb(237, 59, 68) 98.722%
-  );
+  background-image: url(/images/Hero/modal-mobile.png);
+  background-size: cover;
   margin: auto;
   padding: 20px;
   width: 100%;
   height: 812px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-image: url(/images/Hero/hero-mobile.png);
+}
+
+.modal-content{
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-resolution: 192dpi) { 
+        .container-hero {
+        background-image: url(/images/Hero/hero-mobile@2x.png);
+
+        animation: modal-content 10s infinite;
+        background-repeat: no-repeat;
+    }
+}
+}
+
+.modal-content {
+  animation: container-hero 10s infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/images/Hero/hero-mobile.png);
+}
+
+@keyframes container-hero {
+    0%   { background-image: url(/images/Hero/hero-mobile@2x.png); }
+    33%  { background-image: url(/images/Hero/hero-mobile-orange@2x.png); }
+    66%  { background-image: url(/images/Hero/hero-mobile-green@2x.png); }
+    100% { background-image: url(/images/Hero/hero-mobile-blue@2x.png); }
 }
 
 .close {
@@ -139,6 +170,7 @@
   width: 28px;
   right: 28px;
   top: 32px;
+  position: absolute;
 }
 
 /* =============================Tablet Styles============================= */
@@ -161,8 +193,29 @@
     font-weight: 500;
     line-height: 90px;
     letter-spacing: -0.02em;
-    text-align: left;
-    text-decoration-line: underline;
+  }
+
+  .position-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .hidden-menu{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 107px;
+    height: 89px;
+    gap: 6px;
+  }
+
+  .menu-list{
+    color: rgb(250, 250, 250);
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
   }
 
   .link-order {
@@ -266,13 +319,31 @@
 }
 
 
+.position-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hidden-menu{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 107px;
+  height: 89px;
+  gap: 6px;
+}
 
-
-
+.menu-list{
+  color: rgb(250, 250, 250);
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: -0.02em;
 }
 
 
-
-
+.icon-burger {
+  display: none;
+}
+}
 
 /* =========================Decktop Style================================ */
