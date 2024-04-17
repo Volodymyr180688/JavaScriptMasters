@@ -11,24 +11,27 @@
   margin: 32px 0px;
 }
 .reviews-list {
-  width: 343px;
+  width: 332px;
   height: 302px;
   margin-bottom: 32px;
   display: flex;
+  gap: 16px;
   justify-content: flex-start;
   align-items: flex-start;
   text-align: center;
-  flex-wrap: nowrap;
 }
 .reviews-list-item {
-  width: 343px !important;
+  
+  width: 332px !important;
   height: 302px !important;
+  margin-right: 0 !important;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 32px 24px 32px 24px;
   flex: none;
+  overflow: hidden;
   background-color: rgba(28, 29, 32, 1);
   order: 0;
   flex-grow: 0;
