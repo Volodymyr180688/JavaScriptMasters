@@ -1,16 +1,19 @@
 .footer-container {
-    /* box-sizing: border-box; */
     display: flex;
     flex-direction: column;
-    /* min-width: 320px; */
-    /* margin: 0 auto; */
+    width: 100%;
     padding: 32px 16px;
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: -0.02em;
     color: #fafafa;
+    background-image: url(../images/footer/footer_bg_mobile.png);
+    background-size: cover;
+}
+
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-device-pixel-ratio: 2) {
+    .footer-container {
+        background-image: url(../images/footer/footer_bg_mobile@2x.png);
+    }
 }
 
 .footer-title-wrapper {
@@ -75,7 +78,6 @@
     content: 'Invalid email, try again';
     color: #E74A3B;
     width: 100%;
-    /* background-color: #E74A3B; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -99,12 +101,6 @@
 
 .footer-form-input:focus {
     color: #fafafa;
-}
-
-.footer-form-comments {
-    background-color: transparent;
-    resize: none;
-    border: none;
 }
 
 .color-accent {
@@ -146,6 +142,9 @@
     transition: border 250ms linear;
     outline: 0px solid transparent;
     font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    font-weight: 500;
     font-style: normal;
     line-height: 0.85;
 }
@@ -157,9 +156,21 @@
 
 @media screen and (min-width: 768px) {
     .footer-container {
-        /* min-width: 768px; */
+        min-width: 768px;
+        width: 100%;
         padding: 64px 32px;
+        background-image: url(../images/footer/footer_bg_tablet.png);
     }
+
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .footer-container {
+            background-image: url(../images/footer/footer_bg_tablet@2x.png);
+        }
+    }
+
+
 
     .footer-title-wrapper {
         column-gap: 20px;
@@ -182,7 +193,7 @@
     }
 
     .footer-form-input {
-        width: 245px;
+        min-width: 245px;
     }
 
     .footer-form-btn {
@@ -207,6 +218,15 @@
     .footer-container {
         min-width: 1440px;
         padding: 64px 196px 169px;
+        background-image: url(../images/footer/footer_bg_desktop.png)
+    }
+
+    @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+        .footer-container {
+            background-image: url(../images/footer/footer_bg_desktop@2x.png);
+        }
     }
 
     .footer-title-wrapper {
@@ -229,7 +249,7 @@
     }
 
     .footer-form-input {
-        width: 390px;
+        min-width: 390px;
     }
 }
 
@@ -293,7 +313,6 @@
 }
 
 .footer-modal-title {
-    font-family: "Inter Tight", sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 1.5;
@@ -304,7 +323,6 @@
 }
 
 .footer-modal-content {
-    font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
