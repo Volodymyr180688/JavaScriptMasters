@@ -4,13 +4,17 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  width: 260px;
 
+  width: 262px;
+  margin-bottom: 48px;
+}
+
+
+.swiper-mini-section {
+  min-width: 376px;
+  height: 224px;
 }
 .about-swiper-wrapper {
-  position: relative;
   display: flex;
   width: 260px;
   height: 130px;
@@ -29,9 +33,8 @@
 .swiper-item.active {
   background-color: #ed3b44;
 }
-.about-button-wrapper {
+.about-button-next {
   position: absolute;
-  right: -48px;
   transform: translateY(-50%);
   z-index: 1;
   width: 52px;
@@ -42,15 +45,16 @@
   border: transparent;
 }
 
+
 @media screen and (min-width: 768px) {
   .swiper-mini-section {
-    width: 704px;
-    height: 200px;
+    max-width: 789px;
+    height: 224px;
   }
 
   .swiper-container {
-    width: 604px;
-    height: 201px;
+    width: 606px;
+    height: 224px;
   }
 
   .about-swiper-wrapper {
@@ -61,18 +65,15 @@
   .swiper-item {
     width: 200px !important;
     height: 200px !important;
-
     line-height: 200px;
     font-size: 20px;
   }
-  .about-button-next {
-    right: 40px;
-  }
+  
 }
 
 @media screen and (min-width: 1440px) {
   .swiper-mini-section {
-    width: 1312px;
+    max-width: 1348px;
   }
 
   .swiper-container {
@@ -81,11 +82,5 @@
     margin-left: auto;
     margin-right: auto;
   }
-
-  .about-swiper-wrapper {
-    width: 1312px;
-  }
-  .about-button-next {
-    right: 65px;
-  }
+  
 }

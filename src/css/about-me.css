@@ -1,5 +1,5 @@
 .about-me-section{
-  max-width: 375px;
+  min-width: 375px;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-left: auto;
@@ -217,7 +217,7 @@
 
   .accordion-in-about-me{
     margin-top: 96px;
-    max-width: 1376px;
+    max-width: 1440px;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0px;
@@ -230,12 +230,10 @@
     height: auto;
 
   }
-
   .first-title-text{
     width: 612px;
    height: 144px;
   }
-
   .about-me-text {
     font-size: 38px;
     font-weight: 500;
