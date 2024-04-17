@@ -1,4 +1,3 @@
-
 /* =============================Mobile Styles============================= */
 
 .centering {
@@ -193,6 +192,15 @@
     font-weight: 500;
     line-height: 90px;
     letter-spacing: -0.02em;
+    text-decoration-line: underline;
+  }
+
+  menu::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    bottom: 3px;
+    left: 0;
   }
 
   .position-menu{
@@ -202,6 +210,7 @@
 }
 
   .hidden-menu{
+    opacity: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -317,13 +326,21 @@
     text-decoration-line: underline;
 }
 
+menu::after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  bottom: 3px;
+  left: 0;
+}
+
+
 .position-menu{
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.hidden-menu{
+.hidden-menu{ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,7 +357,9 @@
 }
 
 
-
+.icon-burger {
+  display: none;
+}
 }
 
 /* =========================Decktop Style================================ */
