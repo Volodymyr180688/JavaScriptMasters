@@ -6,6 +6,7 @@ const aboutMeNextButton = document.querySelector('.about-button-wrapper');
 const swiper = new Swiper('.swiper-container', {
   navigation: {
     nextEl: aboutMeNextButton,
+    mousewheel: true,
   },
   loop: true,
   direction: 'horizontal',
