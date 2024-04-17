@@ -13,7 +13,6 @@ body {
 }
 
 .covers-container {
-  min-width: 400px;
   overflow: hidden;
   padding: 0;
   background-image: url('../images/covers/background_covers.png');
