@@ -1,17 +1,18 @@
-
 .swiper-container {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 
-  width: 262px;
+  width: 264px;
   margin-bottom: 48px;
 }
 
 .swiper-mini-section {
+  position: relative;
   min-width: 376px;
   height: 224px;
+  margin-bottom: 64px;
 }
 
 .swiper-item {
@@ -38,16 +39,18 @@
   background-color: transparent;
   stroke: #3b3b3b;
   border: transparent;
+  right: 16px;
 }
 
 @media screen and (min-width: 768px) {
   .swiper-mini-section {
     max-width: 789px;
     height: 224px;
+    margin-bottom: 96px;
   }
 
   .swiper-container {
-    width: 604px;
+    width: 606px;
     height: 224px;
   }
 
@@ -56,15 +59,20 @@
     height: 200px !important;
     line-height: 200px;
     font-size: 20px;
-  }}
+  }
+  .about-button-next {
+    right: 32px;
+  }
+}
 
 @media screen and (min-width: 1440px) {
-  
   .swiper-container {
-    width: 1209px;
+    width: 1212px;
     height: 202px;
     margin-left: auto;
     margin-right: auto;
   }
-  
+  .swiper-mini-section {
+    margin-bottom: 164px;
+  }
 }
