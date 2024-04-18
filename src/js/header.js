@@ -28,6 +28,17 @@ function clickEscapeModal(e){
 //* ==========================Modal=====================================
 
 
+//*===========Закриття мобільної модалки, після нажимання на любу з позицій================
+modalContent.addEventListener('click',exitModal)
+
+function exitModal(e){
+    if(e.currentTarget){
+    modal.style.display = "none"
+}
+} 
+//* ==========================Modal=====================================
+
+
 //*========Логіка по відкриванню і закриванню меню в таблетній і Десктопній версіях==========
 
 const menu = document.querySelector('.menu');

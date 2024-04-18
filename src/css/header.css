@@ -247,6 +247,7 @@
     display: inline;
   }
 
+
   .father-section {
     width: 704px;
     position: absolute;
@@ -392,3 +393,5 @@ menu::after {
 }
 
 /* =========================Decktop Style================================ */
+
+
