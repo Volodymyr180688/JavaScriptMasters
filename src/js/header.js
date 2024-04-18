@@ -1,10 +1,8 @@
-// ===============Modal=====================
+//* ===============Modal=====================================
 const modal = document.querySelector("#myModal");
 const btn = document.querySelector("#myBtn");
 const span = document.querySelector(".close");
 const modalContent = document.querySelector(".modal-content");
-
-
 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -27,42 +25,49 @@ function clickEscapeModal(e){
         modal.style.display = 'none'
     }
   }
+//* ==========================Modal=====================================
 
-// ========================================================
-modalContent.addEventListener('click',exitModal)
 
-function exitModal(e){
-    if(e.currentTarget){
-    modal.style.display = "none"
+//*========Логіка по відкриванню і закриванню меню в таблетній і Десктопній версіях==========
+
+const menu = document.querySelector('.menu');
+const listItems = document.querySelectorAll('.menu-list');
+const menuList = document.querySelector('.hidden-menu');
+
+menu.addEventListener('click', openClose);
+
+function openClose(e) {
+
+    if (menuList.classList.contains('hidden-menu')) {
+      menuList.classList.remove('hidden-menu');
+      menuList.classList.add('visible-menu');
+    } else {
+      menuList.classList.remove('visible-menu');
+      menuList.classList.add('hidden-menu');
+    }
+    e.stopPropagation()
+  }
+
+// ==============================================================================
+listItems.forEach((item) => {
+  item.addEventListener('click', eventOnEachElement);
+});
+    function eventOnEachElement(e){
+
+    menuList.classList.remove('visible-menu');
+    menuList.classList.add('hidden-menu');
+    
+    e.stopPropagation();
+  }
+
+// ============================================================================
+document.addEventListener('click', eventOnTheWholeElement) 
+
+function eventOnTheWholeElement(){
+
+    menuList.classList.remove('visible-menu');
+    menuList.classList.add('hidden-menu');
 }
-} 
 
-// ===================Menu Tablet and Desctop================================
-
-const menu = document.querySelector(".menu")
-const hiddenMenu = document.querySelector(".hidden-menu")
-const menuList = document.querySelector(".list")
-
-menu.addEventListener("click", openMenu)
-
-    function openMenu(e){
-        if(e.currentTarget){
-        hiddenMenu.style.opacity = "1"
-        }
-    }
-
-    hiddenMenu.addEventListener("click", closeMenu)
-    
-    function closeMenu(e){
-
-        if(e.target){
-            hiddenMenu.opacity = "0"
-        }
-    }
-    
-
-// ===================Menu Tablet and Desctop================================
-
-
-// ==========================Modal=========================================
+//*========Логіка по відкриванню і закриванню меню в таблетній і Десктопній версіях==========
 
