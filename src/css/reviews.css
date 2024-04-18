@@ -107,6 +107,7 @@
 @media screen and (max-width: 374px) {
   .reviews-list {
     gap: 30px !important;
+    width: 100% !important;
   }
   .reviews-list-item {
     width: 100% !important;
