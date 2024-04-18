@@ -171,6 +171,13 @@
 
   .father-hero-saction {
     height: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 32px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
   }
 
   .king-text {
@@ -184,7 +191,6 @@
     max-width: 632px;
     height: 450px;
     margin: 0 auto;
-    padding-left: 24px;
     margin-bottom: 187px;
   }
 
@@ -221,7 +227,8 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 172px;
+    left: 140px;
+    top: 937px;
   }
 
   .item-link-mesage {
@@ -325,12 +332,16 @@
     max-width: 1084px;
     height: 270px;
     margin: 0px auto 187px;
-    padding-left: 24px;
   }
 
   .link-message {
-    left: 384px;
-    top: 900px;
+    gap: 10px;
+    height: 55px;
+    display: flex;
+    position: absolute;
+    left: 886px;
+    justify-content: flex-start;
+    width: 503px;
   }
 }
 
