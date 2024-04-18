@@ -132,7 +132,6 @@
 @media screen and (min-width: 768px) {
   .container-hero {
     max-width: 1439px;
-    padding: 0px 15px;
     width: 100%;
     background-image: url(../images/Hero/hero-tablet-orange.png);
   }
@@ -222,13 +221,12 @@
 
   .link-message {
     gap: 10px;
-    width: 100%;
     height: 55px;
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 140px;
-    top: 937px;
+    right: 32px;
+    bottom: 32px;
   }
 
   .item-link-mesage {

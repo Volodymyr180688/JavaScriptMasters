@@ -115,9 +115,15 @@
   margin-bottom: 80px;
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 374px) {
   .container {
     max-width: 375px;
+  }
+  .benefits-card-text {
+    width: 260px;
+  }
+  .benefits-card {
+    width: 292px;
   }
 }
 

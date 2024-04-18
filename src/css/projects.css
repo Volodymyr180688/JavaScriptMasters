@@ -125,6 +125,12 @@
   stroke: #fafafa33;
 }
 
+@media screen and (max-width: 374px) {
+  .projects {
+    width: 300px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .projects {
     display: flex;

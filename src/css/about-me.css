@@ -140,7 +140,7 @@
 
 @media screen and (min-width: 768px) {
   .about-me-section {
-    min-width: 704px;
+    min-width: 768px;
     padding-top: 41px;
     padding-bottom: 48px;
   }
@@ -167,7 +167,7 @@
   }
 
   .first-title-about-me {
-    width: 704px;
+    width: 645px;
   }
 
   .first-title-text {
@@ -197,9 +197,15 @@
     align-items: flex-start;
     padding: 0px;
   }
+  .accordion-ab {
+    width: 708px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .accordion-ab {
+    width: 1382px;
+  }
   .about-me-section {
     max-width: 1440px;
     padding-top: 96px;

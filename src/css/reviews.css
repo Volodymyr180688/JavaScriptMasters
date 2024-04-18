@@ -15,14 +15,13 @@
   height: 302px;
   margin-bottom: 32px;
   display: flex;
-  gap: 16px;
+  gap: 30px;
   justify-content: flex-start;
   align-items: flex-start;
   text-align: center;
 }
 .reviews-list-item {
-  
-  width: 332px !important;
+  width: 345px !important;
   height: 302px !important;
   margin-right: 0 !important;
   display: flex;
@@ -104,4 +103,22 @@
 
 .reviews-prev-btn:disabled > .reviews-list-prev-icon {
   stroke: #fafafa33;
+}
+@media screen and (max-width: 374px) {
+  .reviews-list {
+    gap: 30px !important;
+  }
+  .reviews-list-item {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews-list-item {
+    width: 345px !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews-list-item {
+    width: 322px !important;
+  }
 }
