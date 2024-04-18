@@ -10,7 +10,6 @@
 
 .swiper-mini-section {
   position: relative;
-  min-width: 376px;
   height: 224px;
   margin-bottom: 64px;
 }
@@ -47,7 +46,7 @@
     width: 264px;
   }
   .about-button-next {
-    right: 50px;
+    right: 0;
   }
 }
 

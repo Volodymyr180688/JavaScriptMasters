@@ -24,10 +24,6 @@
   margin-right: auto;
 }
 
-.benefits-main-container {
-  width: 344px;
-}
-
 .benefits-list {
   display: flex;
   flex-direction: column;
@@ -123,7 +119,7 @@
     width: 260px;
   }
   .benefits-card {
-    width: 292px;
+    width: 100%;
   }
 }
 

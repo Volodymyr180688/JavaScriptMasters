@@ -205,6 +205,7 @@
     line-height: 90px;
     letter-spacing: -0.02em;
     text-decoration-line: underline;
+    cursor: pointer;
   }
 
   menu::after {
